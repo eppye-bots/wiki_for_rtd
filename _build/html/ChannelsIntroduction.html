@@ -1,0 +1,221 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Channel introduction &mdash; bots 1.0.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="bots 1.0.0 documentation" href="index.html"/>
+        <link rel="next" title="Channel Recipes" href="ChannelsRecipes.html"/>
+        <link rel="prev" title="Direct database communication" href="ChannelsDatabase.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bots
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="ChannelFileLock.html">Safe file writing/lockings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ChannelPortNumbers.html">Common port number usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ChannelsDatabase.html">Direct database communication</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Channel introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ChannelsRecipes.html">Channel Recipes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ChannelsRecipes.html#email-smtp-pop3-and-partners">Email (smtp, pop3) and partners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ChannelsScripting.html">Channel scripting (communicationscripts)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AboutThisWiki.html">About this wiki</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">bots</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Channel introduction</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="channel-introduction">
+<h1>Channel introduction<a class="headerlink" href="#channel-introduction" title="Permalink to this headline">¶</a></h1>
+<p>Channels take care of communication: file I/O, ftp, email, etc. A
+channel is either incoming or outgoing. Examples of channels:</p>
+<ul><li><p>receive email from a pop3-mailbox</p>
+</li><li><p>send to a ftp-server</p>
+</li><li><p>pick up in-house invoices from a directory on your computer</p>
+</li><li><p>put orders in a file queue for import in your application.</p>
+</li></ul>
+
+<blockquote><p>Example of communication channels for bots:</p>
+</blockquote><p>Notes on naming conventions:</p>
+<ul><li><p>incoming = incoming to bots</p>
+</li><li><p>outgoing = going out bots</p>
+</li><li><p>inbound = my organization receives</p>
+</li><li><p>outbound = going out of my organization</p>
+</li></ul><p>Note: Bots does client communicates (no server). If you need a
+communication server (eg for ftp, as2), use a separate server.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ChannelsRecipes.html" class="btn btn-neutral float-right" title="Channel Recipes" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ChannelsDatabase.html" class="btn btn-neutral" title="Direct database communication" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
