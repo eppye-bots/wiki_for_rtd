@@ -1,3 +1,7 @@
+.. |br| raw:: html
+
+   <br />
+
 FAQ
 ====
 
@@ -16,14 +20,31 @@ Bots-webserver gives error: IOError: Port 8080 not free on 'x.x.x.x' (or similar
     *   Start bots-webserver again.
     *   In your browser you will have to indicate another port eg: ``http://localhost:8090``
 
-Can I run multiple instances of bots-engine in parallel?
-    *   No, this is not possible.
-    *   Instead use bots jobqueue-server for better control of running the engine.
+I try to install bots at Windows Vista/7, but.....
+    *   Probably a rights problem - you'll have to have administrator rights in order to do a proper install.
+    *   Right click the installer program, and choose 'Run as Administrator'.
+    *   Sometimes the shortcut is not installed in the menu, and you will have to make this manually. See `StartGetBotsRunning <StartGetBotsRunning.md>`__
+
+Bots is not working on linux - rights problems.
+    Either:
+    #.   Start bots-webserver and bots-engine with sufficient rights - e.g. as root.
+    #.   Change the owner/rights of the files in botssys, usersys and config; run bots-webserver/bots-engine without root rights.
+
+During windows installation: Error:
+
+   ::
+
+       close failed in file object destructor: 
+       sys.excepthook is missing 
+       lost sys.stderr
+
+   *    seems to happen when UAC is turned off.
+   *    Actually bots just seems to be installed OK, and works OK.....
 
 
 
-Troubleshooting
--------------------
+Troubleshoot
+------------
 
 Files get "stuck" 
     Basically bots expects input to lead to
@@ -94,3 +115,16 @@ error_perm: 502 Command not implemented.
 
 ftp server gives a timeout when writing file (connect is OK) 
     Answer1: In channel, set the 'FTP active mode' (under FTP specfic).
+
+
+
+General
+-------
+
+Does bots have edifact and x12 messages installed out-of-the-box?
+    No. But this can be downloaded on the `sourceforge site <https://sourceforge.net/projects/bots/files>`__ either as
+    part of a working configuration (plugin) of separate (grammars).
+
+Can I run multiple instances of bots-engine in parallel?
+    No, this is not possible. Instead use bots jobqueue-server for better control of running the engine.
+

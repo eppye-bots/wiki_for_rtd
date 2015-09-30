@@ -1,7 +1,3 @@
-.. _sourceforge: http://bots.sourceforge.net
-.. |br| raw:: html
-
-   <br />
    
 
 Welcome to bots documentation!
