@@ -1,3 +1,5 @@
+.. _sourceforge: http://bots.sourceforge.net
+
    
 Get started with bots
 =====================
