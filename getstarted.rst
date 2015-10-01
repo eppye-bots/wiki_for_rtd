@@ -1,27 +1,5 @@
-.. _sourceforge: http://bots.sourceforge.net
-
-   
-Get started with bots
+Get started
 =====================
-
-Introduction
-------------
-
-First steps
-~~~~~~~~~~~
-
-#. Install bots: :ref:`install`
-#. Get bots running: `Get bots running <StartGetBotsRunning.md>`__
-#. Do the tutorial to get your first configuration running: `Tutorial <StartMyFirstPlugin.md>`__ 
-#. Check out the `plugins <http://code.google.com/p/bots/wiki/PluginIntroduction>`__.
-
-
-Other info on bots
-~~~~~~~~~~~~~~~~~~
-
-* Website is on `sourceforge`_. 
-* There is an active mailing list. 
-* Check the overview of features
 
 
 Supported OS's
@@ -166,7 +144,7 @@ Dependencies
 Always needed
 ++++++++++++++
 
-*  Needs: python 2.6/2.7. Python 2.5 works but extra dependencies are needed. Python >= 3.0 does not work.
+*  Needs: python 2.6/2.7. Python >= 3.0 does not work.
 *  Needs: django >= 1.4.0
 *  Needs: cherrypy > 3.1.0
 
