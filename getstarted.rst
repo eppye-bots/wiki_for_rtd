@@ -3,6 +3,7 @@ Get started
 
 
 .. _install:
+
 Installation of bots
 --------------------
 
@@ -97,6 +98,7 @@ Installation from scratch (on red hat) ::
 
 
 .. _dependencies:
+
 Dependencies
 ~~~~~~~~~~~~
 

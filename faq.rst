@@ -102,8 +102,8 @@ Error in Internet Explorer: DoesNotExist: report matching query does not exist.
 
 error_perm: 502 Command not implemented. 
     Answer1: Some FTP-servers do no support 'APPE' command (only 'STOR'). In filename use: ``{overwrite}``. Eg: |br|  
-    ``OUT\_{messagetype}\ *{datetime:%Y%m%d%H%M%S}{overwrite}.edi``
-     |br| Note that this {overwrite} thing only takes care of using STOR instead of APPE. Make sure filename is unique (use *\  !).  |br| 
+    ``OUT\_{messagetype}\ *{datetime:%Y%m%d%H%M%S}{overwrite}.edi`` |br| 
+    Note that this {overwrite} thing only takes care of using STOR instead of APPE. Make sure filename is unique (use \* !).  |br| 
     Answer2: Error occurs in communication via FTP. In channel, set the 'FTP active mode' (under FTP specfic).
 
 ftp server gives a timeout when writing file (connect is OK) 

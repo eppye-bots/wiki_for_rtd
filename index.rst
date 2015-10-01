@@ -45,14 +45,12 @@ Let us know if it runs (or not) on another OS.
 Contents:
 
 .. toctree::
-    
-    :hidden:
-    :maxdepth: 1
-    :glob:
+   :hidden:
+   :maxdepth: 1
+   :glob:
 
-    getstarted
-    faq
-    *
+   getstarted
+   faq
 
 
 
