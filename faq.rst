@@ -121,3 +121,30 @@ Does bots have edifact and x12 messages installed out-of-the-box?
 Can I run multiple instances of bots-engine in parallel?
     No, this is not possible. Instead use bots jobqueue-server for better control of running the engine.
 
+
+
+It's hard to get started
+--------------------------
+
+Often people experience a steep learning curve when starting with edi.
+One reason is that of lot of knowledge is involved:
+
+* edi standards (edifact, x12, tradacoms, EANCOM etc)
+* business processes between you and your edi-partner (logistics!), changes in the business processes
+* understand what your edi-partner wants/requires
+* edi communication methods (x400, VAN's, AS2 etc)
+* imports and exports of your ERP system
+* specifics of the edi software.
+* etc
+
+It is hard to find good information about edi: 
+standards are not always free (eg x12 is not free), 
+decent example messages are hard to get and often if is hard to find good information on Internet. 
+Edi is traditionally 'closed' and sparse with information. 
+Partly this seems to be a 'cultural thing', 
+partly because edi existed before Internet,
+partly because it is all about business data that is not for the general public. 
+Don't give up! ;-)) 
+I think everybody who started with edi has
+gone through this.
+
