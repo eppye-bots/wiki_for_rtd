@@ -14,7 +14,7 @@ Windows installation
 #. Install Python
 
    #. Check if Python is already installed.
-   #. Use python version 2.6 or 2.7; Python >= 3.0 does not work.
+   #. Use python version 2.6 or 2.7; Python >= 3 does not work.
    #. Download Python installer from http://www.Python.org
    #. Install python (double-click).
 
@@ -95,15 +95,16 @@ Installation from scratch (on red hat) ::
 .. note:: versions might not be correct anymore.
 
 
+--------------------
 
 
 .. _dependencies:
 
 Dependencies
-~~~~~~~~~~~~
+--------------------
 
 Always needed
-++++++++++++++
+~~~~~~~~~~~~~
 
 *  Needs: python 2.6/2.7. Python >= 3.0 does not work.
 *  Needs: django >= 1.4.0
@@ -111,8 +112,7 @@ Always needed
 
 
 Optional
-++++++++
-
+~~~~~~~~~
 *  Genshi (when using templates/mapping to HTML).
 *  SFTP needs paramiko and pycrypto. Newer versions of paramiko also need ecdsa.
 *  Cdecimals speeds up bots. See `here <http://www.bytereef.org/mpdecimal/index.html>`__
@@ -122,12 +122,11 @@ Optional
 *  psycopg2, PostgreSQL (when using database PostgreSQL).
 
 
+--------------------
 
-Get bots running
+Main components of bots
 -----------------------
 
-Main components
-~~~~~~~~~~~~~~~~~
 
 #. Bots-monitor: the user interface; the GUI; this is a web interface
    and runs in a web browser like Firefox, Chrome, or Internet Explorer.
@@ -147,6 +146,15 @@ Main components
    *  Bots-engine has no user interface (is a batch process).
    *  To view the results of bots-engine, use bots-monitor.
    *  After performing its actions bots-engine stops.
+
+
+
+--------------------
+
+.. _get-bots-running:
+
+Get bots running
+-----------------------
 
 
 Start bots-monitor (using bots-webserver)
@@ -180,6 +188,110 @@ There are several ways to start bots-engine:
 The results of what bots-engine has done can be viewed in the
 bots-monitor. 
 
-.. note:: if you did not configure of bots to do something, the bots-engine will run but will not do much. To get bots to do something see Tutorial.
+.. note:: if you did not configure of bots to do something, the bots-engine will run but will not do much. To get bots to do something see :ref:`tutorial`.
+
+--------------------
+
+.. _tutorial:
+
+Tutorial my first plugin
+------------------------
+
+Purpose of this tutorial is to get your first edi configuration running.
+This is done by installing plugin 'my_first_plugin'; this plugin provides a working configuration. 
+When run, this configuration will read and write example edi messages (provided in the plugin) from your system. 
+In this configuration incoming edifact orders are translated to a fixed file format.
+
+Install plugin 'my_first_plugin'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*   Download and install plugin from `sourceforge <https://sourceforge.net/projects/bots/files/plugins/my_first_plugin>`_. 
+*   Instructions for installing a plugin are here. 
+
+
+Activate the route
+~~~~~~~~~~~~~~~~~~~
+
+#.  go to the routes screen: *bots-monitor->Configuration->Routes* .
+#.  note that route 'myfirstroute' is not active now (indicated by red icon).
+#.  select the tick-box in front of the route 'myfirstroute'.
+#.  select action 'activate/de-activate'.
+#.  click on the 'Go'-button behind the selected action.
+#.  note that route 'myfirstroute' is active now (indicated by green icon).
+
+
+Run the translation
+~~~~~~~~~~~~~~~~~~~
+*   Run the translation: *bots-monitor->Run->Run (Only New)*.
+*   You will get notified that the bots-engine is started. Bots-engine is the part of bots that does the translations and communications; it runs in the background. 
+*   Bots-engine will be finished in approximately one second.
+
+
+View results
+~~~~~~~~~~~~~~~~
+
+*   First look at the results of the run: *bots-monitor->All runs->Reports (per run)*. 
+*   Each run of bots is represented by a line; the last run is on top.
+*   View the incoming files via *bots-monitor->Last run->Incoming*. 
+*   Click on the incoming file to see its contents.
+*   View the outgoing files (the results of the translation) go to or *bots-monitor->Last run->outgoing*. 
+*   Click on the file name to see its contents.
+
+That was somewhat fast en short; more information:
+
+*   View the results: screenshots.
+*   Walk through the configuration.
+*   A more detailed explanation about what happens.
+
+
+View the results
+----------------
+
+View runs
+~~~~~~~~~
+
+For each run of bots-engine you can see the results in *bots-monitor->All runs->Reports (per run)*:
+
+.. image:: images/myfirst_runs.png
+
+If you go to the star in front of a line, a drop-down menu appears where you can zoom in on the results of the run.
+
+
+View incoming
+~~~~~~~~~~~~~
+
+Incoming files of the last run can be viewed via *bots-monitor->Last run->Incoming*:
+
+.. image:: images/myfirst_incoming_last_run.png
+
+View all incoming files via bots-monitor->All runs->Incoming:
+
+.. image:: images/myfirst_incoming_all.png
+
+By using the 'Change selection' button you can change the selection criteria for the view. 
+By clicking a filename you can view the contents of that file.
+
+
+View outgoing
+~~~~~~~~~~~~~
+
+The outgoing files of the last run can be viewed via *bots-monitor->Last run->Outgoing*:
+
+.. image:: images/myfirst_outgoing_last_run.png
+
+
+Detail screen
+~~~~~~~~~~~~~
+
+When you are in the 'incoming' screen and go to the star in front of a line, a drop-down menu appears where you can zoom in on the details of
+the processing of the incoming file:
+
+.. image:: images/myfirst_detailscreen.png
+
+Here the detailed steps in processing an incoming file are shown.
+
+
+
+
 
 

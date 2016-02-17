@@ -1,3 +1,8 @@
+.. image:: images/botslogo_chain.png
+
+|
+|
+
 Home
 =====================================
 
@@ -11,8 +16,8 @@ First steps
 ~~~~~~~~~~~
 
 #. :ref:`install`.
-#. Get bots running: `Get bots running <StartGetBotsRunning.md>`__
-#. Do the tutorial to get your first configuration running: `Tutorial <StartMyFirstPlugin.md>`__ 
+#. :ref:`get-bots-running`.
+#. Do :ref:`tutorial`. 
 #. Check out the `plugins <http://code.google.com/p/bots/wiki/PluginIntroduction>`__.
 
 
@@ -41,12 +46,9 @@ Let us know if it runs (or not) on another OS.
 
 
 
-
-Contents:
-
 .. toctree::
    :hidden:
-   :maxdepth: 1
+   :maxdepth: -1
    :glob:
 
    getstarted
