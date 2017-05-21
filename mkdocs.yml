@@ -1,6 +1,6 @@
 site_name: Bots Open Source Edi Translator
 docs_dir: docs
-theme: mkdocs
+#theme: readthedocs
 #extra_css:
 #    - css/extra.css
 extra_javascript: 

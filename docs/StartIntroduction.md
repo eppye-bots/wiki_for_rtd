@@ -1,4 +1,7 @@
-## First steps
+* First steps *
+
+
+** First steps **
 
 1. 	Install bots: [Installation](StartInstallProcedure.md) 
 1. 	Get bots running: [Get bots running](StartGetBotsRunning.md) 
