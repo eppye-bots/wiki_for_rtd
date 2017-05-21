@@ -4,6 +4,8 @@
    contain the root `toctree` directive.
 
 .. image:: images/botslogo_chain.png
+ | 
+ | 
 
 
 Welcome to ``Bots``'s documentation
@@ -17,6 +19,7 @@ Welcome to ``Bots``'s documentation
 * ``Bots`` is very flexible and can be configurated for your specific EDI needs. 
 * Read about the `features of bots <http://bots.sourceforge.net/en/about_features.shtml>`_ and `the latest news <http://bots.sourceforge.net/en/news.shtml>`_
 
+
 First steps
 -----------
 
@@ -26,17 +29,22 @@ First steps
 
 After that: check out some :doc:`plugins <plugins/index>`.
 
+
 Other info on ``bots``
 ----------------------
 
-* `Website <http://bots.sourceforge.net/>`_ on sourceforge.
+* `Sourceforge website <http://bots.sourceforge.net/>`.
 * Active `mailing list <http://groups.google.com/group/botsmail>`_.
+* Commercial support by `EbbersConsult <http://www.ebbersconsult.com>`.
+* Bots is licenced under `GNU GENERAL PUBLIC LICENSE Version 3 <http://www.gnu.org/copyleft/gpl.html>`
+
 
 About this wiki
 ---------------
 
 * If you want to ask questions please use the ``bots`` `mailing list <http://groups.google.com/group/botsmail>`_.
 * It is very much appreciated if you want to contribute to this wiki. Just let me know via the mailing list and you'll get the rights.
+
 
 It's hard to get started
 ------------------------
