@@ -6,7 +6,7 @@
 
 After that check out some [plugins](PluginIntroduction.md).
 
-### Other info on bots
+### Other info for bots
 
 [Website](http://bots.sourceforge.net) is on sourceforge.  
 There is an active [mailing
