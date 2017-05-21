@@ -1,4 +1,4 @@
-site_name: Documentation for Bots/Edi Open Source Translator
+site_name: Docs for Bots Open Source Edi Translator
 docs_dir: docs
 theme: readthedocs
 #extra_css:
@@ -6,6 +6,7 @@ theme: readthedocs
 extra_javascript: 
     - js/extra.js
 pages:
+    - Home: 'index.md'
     - Get started with bots: 
         - Introduction: 'StartIntroduction.md'
         - Installation:
@@ -20,15 +21,15 @@ pages:
             - View results: StartMyFirstPluginResults.md
             - Walk through setup: StartMyFirstPluginSetup.md
             - What happened: StartMyFirstPluginDepth.md
-    -   Guide for bots-monitor: 
+    - Guide for bots-monitor: 
         - Introduction: MonitorIntroduction.md
         - How to rereceive: MonitorRereceive.md
 #        - Customize menu: MonitorCustomize.md
-    -   Configuration: 
+    - Configuration: 
         - Overview: OverviewConfiguration.md
         - How to do configuration: ConfigurationHow.md
         - DIY step by step: ConfigurationDIY.md
-    -   Route:
+    - Route:
         - Introduction: RoutesIntroduction.md
         - Composite routes: RoutesComposite.md
         - 'PassThrough (no translation)': RoutesPass.md
@@ -37,7 +38,7 @@ pages:
             - Overview Exit points: RouteScriptsOverviewExits.md
             - Preprocessing recipes: RouteScriptsExample.md
             - Take over whole route: RouteScriptsExampleWholeRoute.md
-    -   'Channel/communication':
+    - 'Channel/communication':
         - Introduction: ChannelsIntroduction.md
         - Filenames: Filenames.md
         - Database communication: ChannelsDatabase.md
