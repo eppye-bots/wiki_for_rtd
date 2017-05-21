@@ -3,8 +3,8 @@
 1. 	Install bots: [Installation](StartInstallProcedure.md) 
 1. 	Get bots running: [Get bots running](StartGetBotsRunning.md) 
 1. 	Get your first configuration running: [Tutorial](StartMyFirstPlugin.md) 
-	After that check out some
-	[plugins](PluginIntroduction.md).
+
+After that check out some [plugins](PluginIntroduction.md).
 
 ### Other info on bots
 
