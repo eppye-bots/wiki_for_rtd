@@ -1,5 +1,6 @@
 .. image:: images/botslogo_chain.png
-
+.. |br| raw:: html
+.. |br| raw:: html
 
 Welcome to ``Bots``'s documentation
 ===================================
@@ -26,10 +27,10 @@ After that: check out some :doc:`plugins <plugins/index>`.
 Other info on ``bots``
 ----------------------
 
-* `Sourceforge website <http://bots.sourceforge.net/>`.
+* `Sourceforge website <http://bots.sourceforge.net/>`_.
 * Active `mailing list <http://groups.google.com/group/botsmail>`_.
-* Commercial support by `EbbersConsult <http://www.ebbersconsult.com>`.
-* Bots is licenced under `GNU GENERAL PUBLIC LICENSE Version 3 <http://www.gnu.org/copyleft/gpl.html>`
+* Commercial support by `EbbersConsult <http://www.ebbersconsult.com>`_.
+* Bots is licenced under `GNU GENERAL PUBLIC LICENSE Version 3 <http://www.gnu.org/copyleft/gpl.html>`_.
 
 
 About this wiki
