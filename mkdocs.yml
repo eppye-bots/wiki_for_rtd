@@ -1,14 +1,13 @@
 site_name: Docs for Bots Open Source Edi Translator
 docs_dir: docs
-theme: readthedocs
+theme: mkdocs
 #extra_css:
 #    - css/extra.css
 extra_javascript: 
     - js/extra.js
 pages:
-    - 'index.md'
-    - Get started with bots: 
-        - Introduction: 'StartIntroduction.md'
+    - Home: 'index.md'
+    - Get started with bots: 'StartIntroduction.md'
         - Installation:
             - Installation: StartInstallProcedure.md
             - Installation Windows: StartInstallWindows.md
