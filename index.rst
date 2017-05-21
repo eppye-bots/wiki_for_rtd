@@ -3,8 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ``Bots``'s documentation!
-====================================
+.. image:: ../images/botslogo_chain.png
+
+
+Welcome to ``Bots``'s documentation
+===================================
 
 * ``Bots`` is fully functional software for `EDI (Electronic Data Interchange) <https://en.wikipedia.org/wiki/Electronic_data_interchange>`_. 
 * All major EDI data formats are supported: EDIFACT, X12, TRADACOMS, XML. 
@@ -26,8 +29,8 @@ After that: check out some :doc:`plugins <plugins/index>`.
 Other info on ``bots``
 ----------------------
 
-* `Website <http://bots.sourceforge.net/>`_ is on sourceforge.
-* There is an active `mailing list <http://groups.google.com/group/botsmail>`_.
+* `Website <http://bots.sourceforge.net/>`_ on sourceforge.
+* Active `mailing list <http://groups.google.com/group/botsmail>`_.
 
 About this wiki
 ---------------
@@ -57,6 +60,8 @@ Partly this seems to be a 'cultural thing', partly because edi existed before In
 Don't give up! ;-))
 I think everybody who started with edi has gone through this.
 
+
+
 Table of Contents:
 ------------------
 .. toctree::
@@ -66,15 +71,16 @@ Table of Contents:
    get-bots-running
    quick-start-guide/index
    guide-for-botsmonitor/index
-   overview/index
    configuration/index
    deployment/index
    advanced-deployment/index
-   plugins/index
-   tutorials/index
    debugging
+   plugins/index
+   overview/index
    troubleshooting
    change-migrate/index
-   new-to-python
-   external-reference
    useful-tools
+   tutorials/index
+   external-reference
+   new-to-python
+   new-to-python
