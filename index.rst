@@ -85,4 +85,3 @@ Table of Contents:
    tutorials/index
    external-reference
    new-to-python
-   new-to-python
