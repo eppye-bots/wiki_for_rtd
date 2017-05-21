@@ -6,7 +6,7 @@ theme: readthedocs
 extra_javascript: 
     - js/extra.js
 pages:
-    - Home: 'index.md'
+    - 'index.md'
     - Get started with bots: 
         - Introduction: 'StartIntroduction.md'
         - Installation:
