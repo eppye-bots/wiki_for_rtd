@@ -4,6 +4,7 @@
    contain the root `toctree` directive.
 
 .. image:: images/botslogo_chain.png
+
  | 
  | 
 
