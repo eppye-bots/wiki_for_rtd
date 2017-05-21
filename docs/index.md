@@ -1,6 +1,6 @@
 ![](botslogo_chain.png)
 
-# Bots Documentation
+Bots Documentation
 
 - General web site: http://bots.sourceforge.net
 - Questions please use the bots [mailing list](http://groups.google.com/group/botsmail).
