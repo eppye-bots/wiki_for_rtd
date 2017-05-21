@@ -1,4 +1,4 @@
-site_name: Bots EDI Translator Documentation
+site_name: Documentation for Bots/Edi Open Source Translator
 docs_dir: docs
 theme: readthedocs
 #extra_css:
