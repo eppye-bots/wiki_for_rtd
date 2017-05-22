@@ -2,7 +2,7 @@ Debugging
 =========
 
 
-**Basic: bots-monitor/GUI**
+**Basics: use bots-monitor/GUI**
 
 - The reports-screen gives an overview of what happened in a run.
 - If there are process errors in a run, first view the process errors.
@@ -12,7 +12,7 @@ Debugging
 
 
 
-**Extended options**
+**Options to get more information**
 
 - Use explicit checks for all gets/puts: parameter 'get_checklevel' in config/bots.ini:
 
@@ -23,8 +23,8 @@ Debugging
 - Use 'print' in your mapping script. Output can be viewed on the console/command line. Simple, very efficient.
 - Use root.display() to see message content. Not the nicest output, but is definitely what you received or generated.
 
-    - for incoming: at the start of the main function use ``inn.root.display()``
-    - for outgoing: at the end of the main function use ``out.root.display()``
+    - for incoming: at the start of the main function use `inn.root.display()`
+    - for outgoing: at the end of the main function use `out.root.display()`
 
 - Logging. Logging files are written to botssys/logging. Set parameters in config/bots.ini to get more debug information.
 
