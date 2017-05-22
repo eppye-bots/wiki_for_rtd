@@ -3,7 +3,7 @@ Installation
 
 Bots works on operating systems with python installed. Confirmed is:
 
-* windows (2000, XP, Vista, windows7, Server 2008, Server 2012, etc)
+* windows (windows10, XP, Vista, windows7, Server 2008, Server 2012, etc)
 * apple OS.X
 * linux debian (ubuntu, mint, etc)
 * linux Red hat (Centos. Fedora)
@@ -13,31 +13,13 @@ Bots works on operating systems with python installed. Confirmed is:
 
 Let us know if it runs (or not) on another OS.
 
-Dependencies
-------------
 
-Always needed
-    * Needs: python 2.6/2.7. Python 2.5 works but extra dependencies are needed. Python >= 3.0 does not work.
-    * Needs: django >= 1.4.0, django <= 1.7.0
-    * Needs: cherrypy > 3.1.0
-
-Optional
-    * Genshi (when using templates/mapping to HTML).
-    * SFTP needs paramiko and pycrypto. Newer versions of paramiko also need ecdsa.
-    * Cdecimals speeds up bots. See `website <http://www.bytereef.org/mpdecimal/index.html>`_
-    * bots-dirmonitor needs:
-    * pyinotify on ``*nix``
-    * Python for Windows extensions (pywin) for windows
-    * xlrd (when using incoming editype 'excel').
-    * mysql-Python >= 1.2.2, MySQL (when using database MySQL).
-    * psycopg2, PostgreSQL (when using database PostgreSQL).
-
-Windows installation
---------------------
+Windows
+-------
 
 #. Install Python
     #. Check if Python is already installed.
-    #. Use python version 2.6 or 2.7; Python >= 3.0 does not work.
+    #. Use python 2.7; Python >= 3.0 does not work.
     #. Download Python installer `here <http://www.Python.org>`_.
     #. Install python (double-click).
 #. Install bots
@@ -49,8 +31,9 @@ Windows installation
 
 .. note::
 
-    #. Mind your rights. Both Python and Bots need to be installed as admin (windows vista/7/8).
+    #. Mind your rights. Both Python and Bots need to be installed as admin (windows vista/7/8/10).
     #. The windows installer includes all dependencies for standard installation. Some extra dependencies are needed for less used functions (eg. extracting data from excel or pdf files).
+
 
 \*nix installation
 ------------------
@@ -73,6 +56,7 @@ So a standard python source code install is done.
 
 .. note::
     Place the directories botssys, usersys and config somewhere else (out of /usr), change the owner/rights and make symbolic links in the bots installation to these directories.
+
 
 **Installation from scratch**
 
@@ -111,6 +95,7 @@ Installation on amazon EC2, looks like red hat version of linux
         #start up bots-webserver:
         $ bots-webserver.py
 
+
 **Installation from scratch (bots2.2)**
 
 Installation on vanilla CentOS6.2 (logged in as root)
@@ -146,20 +131,50 @@ Installation on vanilla CentOS6.2 (logged in as root)
         #start up bots-webserver:
         bots-webserver.py
 
-FAQ
----
 
-1. I try to install bots at Windows Vista/7, but.....
+Dependencies
+------------
+
+Always:
+
+    * Needs: python 2.6/2.7. Python >= 3.0 does not work.
+    * Needs: django >= 1.4.0, django <= 1.7.0
+    * Needs: cherrypy > 3.1.0
+
+Optional:
+
+    * Genshi (when using templates/mapping to HTML).
+    * SFTP needs paramiko and pycrypto. Newer versions of paramiko also need ecdsa.
+    * Cdecimals speeds up bots. See `website <http://www.bytereef.org/mpdecimal/index.html>`_
+    * bots-dirmonitor needs:
+    
+        * pyinotify on ``*nix``
+        * Python for Windows extensions (pywin) for windows
+        
+    * xlrd (when using incoming editype 'excel').
+    * mysql-Python >= 1.2.2, MySQL (when using database MySQL).
+    * psycopg2, PostgreSQL (when using database PostgreSQL).
+
+
+Install FAQ
+-----------
+
+#. I try to install bots at Windows 7/10, but.....
+
     * Probably a rights problem - you'll have to have administrator rights in order to do a proper install.
     * Right click the installer program, and choose 'Run as Administrator'.
-    * Bots works on Vista/7/8!
     * sometimes the shortcut is not installed in the menu, and you will have to make this manually. See StartGetBotsRunning
-2. Does bots have edifact and x12 messages installed out-of-the-box?
+    
+#. Does bots have edifact and x12 messages installed out-of-the-box?
+
     * No. But this can be downloaded on the sourceforge site either as part of a working configuration (plugin) of separate (grammars).
-3. Bots is not working on linux - rights problems.
+    
+#. Bots is not working on linux - rights problems.
+
     * Start bots-webserver and bots-engine with sufficient rights - e.g. as root.
     * Change the owner/rights of the files in botssys, usersys and config; run bots-webserver/bots-engine without root rights.
-4. **During windows installation; Error**:
+    
+#. **During windows installation; Error**:
 
     .. code-block:: console 
 
