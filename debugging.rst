@@ -2,8 +2,7 @@ Debugging
 =========
 
 
-Basic: bots-monitor/GUI
-¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+**Basic: bots-monitor/GUI**
 
 - The reports-screen gives an overview of what happened in a run.
 - If there are process errors in a run, first view the process errors.
@@ -13,8 +12,7 @@ Basic: bots-monitor/GUI
 
 
 
-Extended options
-----------------
+**Extended options**
 
 - Use explicit checks for all gets/puts: parameter 'get_checklevel' in config/bots.ini:
 
@@ -43,10 +41,10 @@ Extended options
 
 
 
-Debug tips
-----------
-- The errors bots gives for incoming edi-files are quite accurate.
+**Tips**
+
 - Always check first if a run has process errors; if so check the process errors.
+- The errors bots gives for incoming edi-files are quite accurate.
 - Edifact and x12 messages can contain errors. Especially when **found on internet** or taken from documentation/pdf; eg lot of ISA headers for X12 are not OK.
 - If you start using python debugger (pdb) you are definitly on the wrong track.
 - Be careful with character-set/encoding.
