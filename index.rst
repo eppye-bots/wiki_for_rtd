@@ -5,9 +5,9 @@ Welcome to documentation for Bots
 * **Bots** is fully functional software for `EDI (Electronic Data Interchange) <https://en.wikipedia.org/wiki/Electronic_data_interchange>`_. 
 * All major EDI data formats are supported: EDIFACT, X12, TRADACOMS, XML. 
 * Runs on Windows, Linux, OSX and Unix. 
-* ``Bots`` is very stable. 
-* ``Bots`` handles high volumes of edi transactions.
-* ``Bots`` is flexible and can be configurated for your specific EDI needs. 
+* **bots** is very stable. 
+* **bots** handles high volumes of edi transactions.
+* **bots** is flexible and can be configurated for your specific EDI needs. 
 * Read about the `features of bots <http://bots.sourceforge.net/en/about_features.shtml>`_ and `the latest news <http://bots.sourceforge.net/en/news.shtml>`_
 
 
@@ -20,11 +20,11 @@ First steps
 #. Check out some :doc:`plugins <plugins/index>`.
 
 
-Other info on ``bots``
-----------------------
+Other info on bots
+------------------
 
 * `Sourceforge website <http://bots.sourceforge.net/>`_.
-* Active `mailing list <http://groups.google.com/group/botsmail>`_.
+* `Active mailing list <http://groups.google.com/group/botsmail>`_.
 * Bots is licenced under `GNU GENERAL PUBLIC LICENSE Version 3 <http://www.gnu.org/copyleft/gpl.html>`_.
 * Commercial support by `EbbersConsult <http://www.ebbersconsult.com>`_.
 
