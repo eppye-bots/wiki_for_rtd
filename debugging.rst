@@ -1,5 +1,9 @@
+Debugging
+=========
+
+
 Basic: bots-monitor/GUI
------------------------------
+¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 
 - The reports-screen gives an overview of what happened in a run.
 - If there are process errors in a run, first view the process errors.
