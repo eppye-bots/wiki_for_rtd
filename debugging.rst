@@ -13,16 +13,16 @@ Debugging
 .. rubric::
     Extended Debug options
 
-- Set parameter 'get_checklevel' in config/bots.ini. Value '2' = debug: all gets/puts are checked with the grammar(s).\
-  For production: use 1 (sanity checks on get/puts) or 0  (fastest, might give strange error-messages. But than: this should have been debugged by you).
+- Checks for all gets/puts: set parameter 'get_checklevel' in config/bots.ini:
+    - '2': all gets/puts are checked with the grammar(s). Do not use in production, bad for performance.
+    - '1': sanity checks on get/puts.
+    - '0': fastest, might give strange error-messages. But than: this should have been debugged by you.
 - Set parameter 'debug' in config/bots.ini; gives information about the place in the code where the error occurred.
-- Logging. Logging can be found in botssys/logging. Parameters in <a href='StartConfigurationFiles.md'>bots.ini</a> can be set to get more debug information:
-    - **log_file_level**: set to DEBUG to get extended information.
-    - **readrecorddebug**: information about the records that are read and their content.
-    - **mappingdebug**: information about the results of get()/put() in the mapping script. 
-        .. note::
-            In bots 3.0.0 this does not work (bug). Fix: in botsinit.py, line 188 should be: ``botsglobal.logmap = logging.getLogger('engine.map')``
-- For some communication protocols set in config/bots.ini eg ftpdebug, smtpdebug, pop3debug. This debug-information is on the console/command line.
+- Logging. Logging files are written to botssys/logging. Set parameters in config/bots.ini to get more debug information:
+    - *log_file_level*: set to DEBUG to get extended information.
+    - *readrecorddebug*: information about the records that are read and their content.
+    - *mappingdebug*: information about the results of get()/put() in the mapping script. 
+- For communication protocols set in config/bots.ini eg ftpdebug, smtpdebug, pop3debug. This debug-information is on the console/command line.
 - Within mapping script (or other user script) use 'print', output can be viewed on the console/command line.
 - Within a mapping script use root.display() to see message content in mapping script. This is not the nicest output, but is definitely what you received or generated.
     - incoming: at the start of the main function ``inn.root.display()``
