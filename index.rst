@@ -1,28 +1,23 @@
-.. image:: images/botslogo_chain.png
-
-.. |br| raw:: html
-.. |br| raw:: html
 
 Welcome to documentation for Bots
 =================================
 
-* ``Bots`` is fully functional software for `EDI (Electronic Data Interchange) <https://en.wikipedia.org/wiki/Electronic_data_interchange>`_. 
+* **Bots** is fully functional software for `EDI (Electronic Data Interchange) <https://en.wikipedia.org/wiki/Electronic_data_interchange>`_. 
 * All major EDI data formats are supported: EDIFACT, X12, TRADACOMS, XML. 
 * Runs on Windows, Linux, OSX and Unix. 
 * ``Bots`` is very stable. 
 * ``Bots`` handles high volumes of edi transactions.
-* ``Bots`` is very flexible and can be configurated for your specific EDI needs. 
+* ``Bots`` is flexible and can be configurated for your specific EDI needs. 
 * Read about the `features of bots <http://bots.sourceforge.net/en/about_features.shtml>`_ and `the latest news <http://bots.sourceforge.net/en/news.shtml>`_
 
 
 First steps
 -----------
 
-#. Install ``bots``: :doc:`Installation <installation>`
-#. Get ``bots`` running: Get ``bots`` :doc:`running <get-bots-running>`
-#. Get your first configuration running: :doc:`Tutorial <quick-start-guide/index>`
-
-After that: check out some :doc:`plugins <plugins/index>`.
+#. :doc:`Installation <installation>`
+#. :doc:`Start bots up <get-bots-running>`
+#. Get your first configuration running: :doc:`tutorial <quick-start-guide/index>`
+#. Check out some :doc:`plugins <plugins/index>`.
 
 
 Other info on ``bots``
