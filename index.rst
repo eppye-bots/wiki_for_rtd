@@ -65,10 +65,10 @@ Table of Contents:
    configuration/index
    deployment/index
    advanced-deployment/index
+   troubleshooting
    debugging
    plugins/index
    overview/index
-   troubleshooting
    change-migrate/index
    useful-tools
    tutorials/index

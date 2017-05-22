@@ -1,13 +1,11 @@
 Troubleshooting/FAQ
 ===================
 
-Answers to common problems in bots... traps for new players.
-
 
 **Files are 'stuck'**
     Basically bots expects input to lead to output. When a file is 'stuck' input did not lead to output.
     Somehow the setup you made is not OK. Files go in, but nothing comes out.
-    Often this is the problem: Have you put any `filtering <configuration/route/composite-routes>`_ on the output of your route? (under 'Filtering for outchannel' in the route configuration).
+    Often this is the problem: Have you put any `filtering <../configuration/route/composite-routes>`_ on the output of your route? (under 'Filtering for outchannel' in the route configuration).
     Filtering allows you send only particular files via an out-channel; but a file that does not match one of the filters will end up "stuck" because Bots does not know where to send it. 
     If you have only one outchannel, there is no need for filtering.
 
@@ -43,9 +41,8 @@ Answers to common problems in bots... traps for new players.
 **error_perm: 502 Command not implemented.**
     Error occurs during out-communication via FTP. 
     Some FTP-servers do no support ``APPE`` command (only ``STOR``). 
-    To resolve add to filename: ``{overwrite}``.
-        Eg. ``{overwrite}OUT_{messagetype}_{datetime:%Y%m%d%H%M%S}_*.edi``
-    This ``{overwrite}`` thing only takes care of using ``STOR`` instead of ``APPE``. Make sure filename is unique (use * !).
+    To resolve add '{overwrite}' to filename, eg: ``{overwrite}OUT_{datetime:%Y%m%d%H%M%S}_*.edi``
+    Please make sure that filename is always unique by using ``*``.
 
     Another option is to set the ``FTP active mode`` in channel (under FTP specfic).
 
