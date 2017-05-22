@@ -165,7 +165,7 @@ html_last_updated_fmt = '%Y-%m-%d'
 #html_additional_pages = {}
 
 # If false, no module index is generated.
-#html_domain_indices = True
+html_domain_indices = False
 
 # If false, no index is generated.
 #html_use_index = True
@@ -227,8 +227,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'bots.tex', u'documentation for bots',
-   u'hjebbers', 'manual'),
+  (master_doc, 'bots.tex', u'documentation for bots', u'hjebbers', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
