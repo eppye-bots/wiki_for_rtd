@@ -21,12 +21,13 @@ Options for running bots-engine:
     * **resend**: resend user indicated edi-files. Via run-menu or command-line: ``bots-engine.py --resend``
     * **automaticretrycommunication**: resend edi-files where out-communication failed. Command-line: ``bots-engine.py --automaticretrycommunication``
 
+
 Scheduling Bots-Engine
 ----------------------
 
 * Bots does not have a built-in scheduler. Scheduling is done by the scheduler of your OS.
     * Windows: use eg `Windows Task Scheduler <http://support.microsoft.com/kb/308569>`_.
-    * Linux/unix: use eg `cron <http://www.linuxhelp.net/guides/cron/>`_. 
+    * Linux/unix: use eg cron. 
 * Bots-engine does not run concurrently (in parallel). If a previous run is still in progress, a new run will not start. From version 3.0 onwards, Bots includes an optional `job queue server <#job-queue-server-bots-3-0>`_ to use when scheduling Bots engine. Using this is recommended, to prevent discarding runs that overlap.
 * **Strong advice**: when scheduling bots-engine, activate the sending of :doc:`automatic email-reports <email-notifications>` for errors.
 
@@ -101,8 +102,10 @@ Each task has a corresponding batch file in the scripts directory. This makes ta
     :: daily reporting &amp; SAP data downloads
     C:\python27\python.exe C:\python27\scripts\bots-job2queue.py -p9 C:\python27\python.exe C:\python27\scripts\bots-engine.py daily_reports SAP_Expired_Contracts
 
-Job Queue Server(bots >= 3.0)
------------------------------
+
+
+Job Queue Server
+----------------
 
 Purpose of the bots jobqueue is to enable better scheduling of bots engine:
 
@@ -172,8 +175,10 @@ Details:
 
         bots-job2queue.py -p3 bots-engine.py --new -Cconfigprod
 
-Directory Monitor (bots >= 3.0)
--------------------------------
+
+
+Directory Monitor
+-----------------
 
 This provides a method of monitoring specific **local** directories, and running Bots engine when files are ready to be processed.
 
@@ -185,8 +190,10 @@ Use of the directory monitor is optional. It may be useful for processing files 
 * Monitoring must be configured in `bots.ini <../overview/configuration-files.html#bots-ini>`_ (``dirmonitorX`` sections)
 * Directory monitor :doc:`daemon process <run-as-service>` must be started (``bots-dirmonitor.py``)
 
-Return codes for bots engine (bots>=3.0)
-----------------------------------------
+
+Return codes for bots-engine
+----------------------------
+
 Bots-engine uses the following return codes:
 
 * 0: OK, no errors.

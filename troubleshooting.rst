@@ -18,9 +18,9 @@ Troubleshooting/FAQ
     This is usually a permission problem. 
     Remember that if you are running Bots Engine as a daemon/service it may be running under a system user account. 
     Make sure the user has rights to the folder/files, or run the engine with a special user account that does have the required rights. 
-    It is best to use the `Jobqueue <../deployment/run-botsengine.html#job-queue-server-bots-3-0>`_ so that engine runs started from the GUI also run under the special user account.
+    It is best to use the `Jobqueue <../deployment/run-botsengine#job-queue-server>`_ so that engine runs started from the GUI also run under the special user account.
 
-**Error in Internet Explorer: 'ValueError?: invalid literal for int() with base 10'**
+**Error in Internet Explorer: 'ValueError: invalid literal for int() with base 10'**
     This has to do with the compatibility-settings of IE (tools->compatibility view settings). 
     Text from Microsoft: 'Websites that were designed for earlier versions of Internet Explorer might not display correctly in IE8, IE9, or IE10. 
     When you turn on Compatibility View, the webpage you're viewing, as well as any other webpages within the website's domain, will be displayed as if you were using an earlier version of Internet Explorer. 
@@ -35,18 +35,18 @@ Troubleshooting/FAQ
 
 **Outgoing files to sftp server result in 'IOError: [Errno 13] Requested operation is not supported.'**
     Error occurs during out-communication via FTP. 
-    Some FTP-servers do no support `APPE` command (only `STOR`). 
-    To resolve add '{overwrite}' to filename, eg: `{overwrite}OUT_{datetime:%Y%m%d%H%M%S}_*.edi`
+    Some FTP-servers do no support 'APPE' command (only 'STOR'). 
+    To resolve add '{overwrite}' to filename, eg: ``{overwrite}OUT_{datetime:%Y%m%d%H%M%S}_*.edi``.
     Please make sure that filename is always unique by using ``*``.
 
 **error_perm: 502 Command not implemented.**
     Error occurs during out-communication via FTP. 
-    Some FTP-servers do no support `APPE` command (only `STOR`). 
-    To resolve add '{overwrite}' to filename, eg: `{overwrite}OUT_{datetime:%Y%m%d%H%M%S}_*.edi`
+    Some FTP-servers do no support 'APPE' command (only 'STOR'). 
+    To resolve add '{overwrite}' to filename, eg: ``{overwrite}OUT_{datetime:%Y%m%d%H%M%S}_*.edi``.
     Please make sure that filename is always unique by using ``*``.
 
-    Another option is to set the ``FTP active mode`` in channel (under FTP specfic).
+    Another option is to set the 'FTP active mode' in channel (under FTP specfic).
 
 **ftp server gives a timeout when writing file (connect is OK)**
-    In channel, set the ``FTP active mode`` (under FTP specfic).
+    In channel, set the 'FTP active mode' (under FTP specfic).
 
