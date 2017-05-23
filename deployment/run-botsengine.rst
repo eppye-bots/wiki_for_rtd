@@ -6,7 +6,7 @@ Options for running bots-engine:
 #. Run automatic or manual
     * Manual runs by using the ``run`` options in the menu.
     * `Schedule <#scheduling-bots-engine>`_ Bots-Engine.
-    * Use the `directory monitor/watcher <#directory-monitor>`_.
+    * Use the :doc:`directory monitor/watcher <#directory-monitor>`.
     * This can be combined; eg
         * schedule ``new`` every 15minutes
         * manually ``rereceive`` and ``resend``
@@ -135,7 +135,7 @@ Details:
 .. rubric::
     Starting with the job queue
 
-#. First, enable in `bots.ini <../overview/configuration-files#bots-ini>`_ (jobqueue section, ``enabled = True``).
+#. First, enable in :doc:`bots.ini <../overview/configuration-files#bots-ini>` (jobqueue section, ``enabled = True``).
 #. Start the bots-jobqueueserver. Command-line: ``bots-jobqueueserver.py``.
 #. Put jobs in the job queue:
     * via menu using ``bots-monitor->Run``
