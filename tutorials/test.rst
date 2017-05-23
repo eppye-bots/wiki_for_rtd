@@ -14,9 +14,9 @@ jaja3.3 `andere pagina<../odoo-integration>`_.
 jaja3.4 `andere pagina<./odoo-integration>`_. 
 
 
-jaja4.1 :doc:`ander pagina/link<../overview/configuration-files#bots.ini>` 
+jaja4.1 :doc:`ander pagina/link<../overview/configuration-files#bots-ini>` 
 
-#. 4.2 irstle :doc:`bots.ini <../overview/configuration-files#bots.ini>` 
+#. 4.2 irstle :doc:`bots.ini <../overview/configuration-files#bots-ini>` 
 
 
 test
