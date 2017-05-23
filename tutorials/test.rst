@@ -18,6 +18,10 @@ jaja4.1 :doc:`ander pagina/link<../overview/configuration-files#bots-ini>`
 
 #. 4.2 irstle :doc:`bots.ini <../overview/configuration-files#bots-ini>` 
 
+jaja5.1 :doc:`ander pagina/link<../overview/configuration-files>` 
+
+#. 5.2 irstle :doc:`bots.ini <../overview/configuration-files>` 
+
 
 test
 
