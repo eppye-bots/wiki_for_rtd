@@ -6,7 +6,7 @@ Glossary of Terms
 .. csv-table::
 
     "alt","Used for chained translations."
-    "botskey","Used for business document number, eg order number, invoice number. Used to set up `document views <../../configuration/document-view>`_ (view business document level)."
+    "botskey","Used for business document number, eg order number, invoice number. Used to set up :doc:`document views <../configuration/document-view>` (view business document level)."
     "channel type","Type of communication used for sending/receiving files like ftp, smtp, file I/O."
     "chained translation","A chained translations translate one incoming format to multiple outgoing formats."
     "editype","Type of edi-file like x12, edifact, tradacoms, xml, csv, fixed record files."

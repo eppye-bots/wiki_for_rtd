@@ -10,7 +10,7 @@ Options for running bots-engine:
     * This can be combined; eg
         * schedule ``new`` every 15minutes
         * manually ``rereceive`` and ``resend``
-#. Direct or via `jobqueue-server <#job-queue-server-bots-3-0>`_.
+#. Direct or via `jobqueue-server <#job-queue-server>`_.
 #. Specify the routes to run:
     * Run all routes. Default way of running (nothing specified).
     * Run all routes with excludes. Indicate in route if routes ought not to run in a default run.
@@ -28,7 +28,7 @@ Scheduling Bots-Engine
 * Bots does not have a built-in scheduler. Scheduling is done by the scheduler of your OS.
     * Windows: use eg `Windows Task Scheduler <http://support.microsoft.com/kb/308569>`_.
     * Linux/unix: use eg cron. 
-* Bots-engine does not run concurrently (in parallel). If a previous run is still in progress, a new run will not start. From version 3.0 onwards, Bots includes an optional `job queue server <#job-queue-server-bots-3-0>`_ to use when scheduling Bots engine. Using this is recommended, to prevent discarding runs that overlap.
+* Bots-engine does not run concurrently (in parallel). If a previous run is still in progress, a new run will not start. From version 3.0 onwards, Bots includes an optional `job queue server <#job-queue-server>`_ to use when scheduling Bots engine. Using this is recommended, to prevent discarding runs that overlap.
 * **Strong advice**: when scheduling bots-engine, activate the sending of :doc:`automatic email-reports <email-notifications>` for errors.
 
 .. rubric::
@@ -62,7 +62,7 @@ Scheduling Bots-Engine
 .. rubric::
     My Setup (Mike)
 
-I am using Windows task scheduler and Bots `job queue <#job-queue-server-bots-3-0>`_ is enabled. I have five scheduled tasks:
+I am using Windows task scheduler and Bots `job queue <#job-queue-server>`_ is enabled. I have five scheduled tasks:
 
 #. Bots-engine (every 5 minutes, 24x7)
 #. Bots-engine-hourly (every hour on the hour)
@@ -135,7 +135,7 @@ Details:
 .. rubric::
     Starting with the job queue
 
-#. First, enabled in `bots.ini <../overview/configuration-files.html#bots-ini>`_ (jobqueue section, ``enabled = True``).
+#. First, enabled in :doc:`bots.ini <overview/configuration-files.html#bots-ini>`_ (jobqueue section, ``enabled = True``).
 #. Start the bots-jobqueueserver. Command-line: ``bots-jobqueueserver.py``.
 #. Put jobs in the job queue:
     * via menu using ``bots-monitor->Run``
