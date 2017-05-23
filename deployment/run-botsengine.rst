@@ -186,7 +186,7 @@ Use of the directory monitor is optional. It may be useful for processing files 
 
 **Prerequisites**
 
-* Directory monitor uses the `job queue <#job-queue-server-bots-3-0>`_.
+* Directory monitor uses the `job queue <#job-queue-server>`_.
 * Monitoring must be configured in `bots.ini <../overview/configuration-files.html#bots-ini>`_ (``dirmonitorX`` sections)
 * Directory monitor :doc:`daemon process <run-as-service>` must be started (``bots-dirmonitor.py``)
 
