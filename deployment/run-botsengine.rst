@@ -135,7 +135,7 @@ Details:
 .. rubric::
     Starting with the job queue
 
-#. First, enable in :doc:`bots.ini <../overview/configuration-files#bots-ini>` (jobqueue section, ``enabled = True``).
+#. First, enable in :doc:`bots.ini <../overview/configuration-files#bots.ini>` (jobqueue section, ``enabled = True``).
 #. Start the bots-jobqueueserver. Command-line: ``bots-jobqueueserver.py``.
 #. Put jobs in the job queue:
     * via menu using ``bots-monitor->Run``
