@@ -1,16 +1,19 @@
 `1.1 extern <http://www.python.org>`_.
 
-:doc:`2.1 deze pagina<#test-test>`.
+jaja2.1 :doc:`deze pagina <#tast-tast>`.
 
-:doc:`3.1 andere pagina<odoo-integration>`
+jaja2.2 `deze pagina <#tast-tast>`_.
 
-:doc:`3.2 andere pagina</odoo-integration>`
+
+jaja3.1 :doc:`andere pagina<odoo-integration>`
+
+jaja3,2 :doc:`andere pagina</odoo-integration>`
  
 `3.3 andere pagina<odoo-integration>`_
  
 `3.4 andere pagina</odoo-integration>`_ 
 
-:doc:`4. 1ander pagina/link<../overview/configuration-files#bots-ini>` 
+jaja4.1 :doc:`ander pagina/link<../overview/configuration-files#bots-ini>` 
 
 
 test
@@ -57,5 +60,12 @@ test
 
 test
 
-test test
+tast tast
 ---------
+
+test
+
+test
+
+
+
