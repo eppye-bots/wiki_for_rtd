@@ -8,4 +8,3 @@ General EDI and Bots specific implementation tutorials.
 
     edi-basics
     odoo-integration
-    test

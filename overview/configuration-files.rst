@@ -8,7 +8,7 @@ Configuration Files
 * The configuration files are located in the ``bots/config`` directory (except when using :doc:`multiple environments <../deployment/multiple-environments>`).
 * The original default versions can be found in the ``bots/install`` directory.
 
-bots ini
+bots.ini
 --------
 
     * How long to keep edi files and their registration
