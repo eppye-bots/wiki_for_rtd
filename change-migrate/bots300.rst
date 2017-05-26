@@ -18,7 +18,7 @@ Migration Notes
     #. Excel input: does work; but is now an incoming messagetype and not via 'preprocessing'.
     #. Most user scripts will work; many user scripts are not needed anymore because the functionality is provided by bots now.
     #. Some functions that may be used in user scripting have changed:
-        * ``botslib.change()`` -> ``botslib.changeq()``. This function is used to in processing incoming 997's and CONTRL!!
+        * ``botslib.change()`` -> ``botslib.changeq()``. This function is used to in processing incoming 997's and CONTRL
         * botsengine routescripts: for 'new' runs in routescript botsengine.py called function postnewrun(routestorun) -> postnew(routestorun)
         * ``communication.run(idchannel,idroute)`` -> ``communication.run(idchannel,command,idroute)``. *Command* is one of: 'new','automaticretrycommunication','resend','rereceive'.
         * ``transform.run(idchannel,idroute)`` -> ``transform.run(idchannel,command,idroute)``. *Command* is one of: 'new','automaticretrycommunication','resend','rereceive'.
@@ -37,7 +37,7 @@ Migration Notes
      
     .. note::
 
-        * It is critical to change the settings before updating the database! Bots finds the right database via the settings!
+        * It is critical to change the settings before updating the database. Bots finds the right database via the settings.
         * If you use MySQL or PostGreSQL: same procedure. The bots-updatedb script also updates MySQL or PostGreSQL.
         * Tested this for migration from bots2.2.1 -> 3.0.0, but works for all bots2.* installations.
 
@@ -75,7 +75,7 @@ Migration Notes
     #. copy old data to new installation.
         * in ``/usr/local/lib/python2.7/dist-packages`` new bots-directory is installed.
         * copy directories botssys and usersys from bots221 directory to bots directories. Everything can be overwritten.
-        * mind your rights!
+        * mind your rights.
     #. change settings
         * use new ``config/bots.ini``, adapt for your own values.
         * use new ``config/settings.py``, adapt for your own values. Especially the database settings are important; the format is slightly different (but similar enough to give no problem); critical is using the 'ENGINE'-value of the new settings.py.
@@ -88,7 +88,7 @@ Changes
 
     **Changes in database format since version 3.0.0rc**
 
-    Alas; the database as used in the 3.0.0rc version has changed! Changed is:
+    Alas; the database as used in the 3.0.0rc version has changed. Changed is:
 
     * table channel: field 'testpath' is added
     * table report: field 'acceptance' is added
@@ -165,7 +165,7 @@ Changes
 
     **Better handling of 'database is locked'/crash recovery**
 
-    #. First of all: use the jobqueue-server for more complicated scheduling (prevents running multiple engine!)
+    #. First of all: use the jobqueue-server for more complicated scheduling (prevents running multiple engine)
     #. Different way of detecting another instance of engine is running via locking of port.
     #. If bots-engine finds no other engine is running, but the database is locked this indicates the previous run was ended unexpectedly (eg computer crash). 
     #. In this case bots will do an automatic 'crash recovery'. A warning is still given in logs or via email. Only ONE email is send.

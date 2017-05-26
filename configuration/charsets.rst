@@ -16,8 +16,8 @@ using the character-set as specified in the ``outgoing`` syntax. You do not need
 .. rubric::
     Specifics of different character-sets
 
-* Most used in edi is ascii, iso-8859-1, uft-8 (xml!).
-* Most familiar is ascii. Note that ascii has only 128 characters! One character is one byte.
+* Most used in edi is ascii, iso-8859-1, uft-8 (xml).
+* Most familiar is ascii. Note that ascii has only 128 characters. One character is one byte.
 * The extended asccii character-sets.
     * One character is always one byte.
     * The upper 128 (above ascii) are used as special characters (eg éëè).

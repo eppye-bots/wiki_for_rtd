@@ -28,7 +28,7 @@ Migration notes (from 3.0.0)
     * Most common problem will be for x12: message grammars had by default in syntax parameters:
         ``'version' : '00403',``
     * Formerly this was not used; now it is used.
-    * This might lead to sending another version of ISA-envelope, this is probably not what you want!
+    * This might lead to sending another version of ISA-envelope, this is probably not what you want.
     * Solution: delete (or uncomment) the ``version`` syntax parameter for message grammar.
 
     .. note::

@@ -54,7 +54,7 @@ There are several ways to start bots-engine:
 The results of what bots-engine has done can be viewed in the bots-monitor.
 
 .. note::
-    if you did not configure of bots to do something, the bots-engine will run but will not do much. To get bots to do something see Tutorial.
+    if you did not configure of bots to do something, the bots-engine will run but will not do much. To get bots to do something see :doc:`Quick Start Guide<../quick-start-guide/index>`.
 
 
 Start FAQ

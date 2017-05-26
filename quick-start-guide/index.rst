@@ -1,7 +1,7 @@
 Quick Start Guide
 =================
 
-* Purpose of this tutorial is to get your first edi configuration running.
+* Purpose: get your first edi configuration running.
 * This is done by installing plugin ``my_first_plugin``; this plugin provides a working configuration.
 * When run, this configuration will read and write example edi messages (provided in the plugin) from your system.
 * In this configuration incoming edifact orders are translated to a fixed file format.

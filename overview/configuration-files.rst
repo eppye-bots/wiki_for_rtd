@@ -25,4 +25,4 @@ settings.py
     * Mail server settings for error reports
     * Database settings (eg. to use another database)
     * Security / auto-logout
-    * Localization (time zone!)
+    * Localization (time zone)

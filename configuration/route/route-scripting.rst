@@ -125,7 +125,7 @@ Some recipes for preprocessing edi files. Plugin **demo_preprocessing** at `the 
             tofile = botslib.opendata(str(ta_to.idta),'wb')
 
             # preprocessing: read infile, write tofile
-            # This file has headers and lines, but no field that can be used for BOTSID!
+            # This file has headers and lines, but no field that can be used for BOTSID.
             # Determine the line type from the data, and add HDR or LIN in first column
             # Text heading lines and blank lines are omitted
             for line in infile:

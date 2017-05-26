@@ -2,7 +2,7 @@ Guide For Bots-Monitor
 ======================
 
 .. note::
-    The :doc:`tutorial<../quick-start-guide/index>` contains some detailed information and screen-shots of bots-monitor.
+    See also The :doc:`Quick Start Guide<../quick-start-guide/index>` (includes screen-shots of bots-monitor).
 
 **Menu in bots-monitor**
 

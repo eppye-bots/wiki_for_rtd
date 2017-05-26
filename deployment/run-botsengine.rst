@@ -54,7 +54,7 @@ Scheduling Bots-Engine
 
         c:\python27\python c:\python27\Scripts\bots-engine.py "my daily route"
 
-* Consider whether you need to schedule retries periodically. Particularly with accessing remote servers, sometimes there may be communication errors that would be ok next time bots tries. Otherwise you will need to retry these yourself. File errors are not retried automatically because the same error will just come up again!
+* Consider whether you need to schedule retries periodically. Particularly with accessing remote servers, sometimes there may be communication errors that would be ok next time bots tries. Otherwise you will need to retry these yourself. File errors are not retried automatically because the same error will just come up again.
 
     .. code-block:: bat
 

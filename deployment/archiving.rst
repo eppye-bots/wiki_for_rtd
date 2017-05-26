@@ -14,7 +14,7 @@ How long should edi-files be archived? There is no fixed rule about this.
 Some argue that the edi-files are temporary information carriers and that the real data is processed and archived in the ERP software of you and your edi-partner.
 But:
 
-* for eg invoices there might be legal issues about keeping the 'original invoice'. Check this! (OTOH I get a big smile thinking of legal/tax people wading though these EDI-files. ;-))
+* for eg invoices there might be legal issues about keeping the 'original invoice'. (OTOH I get a big smile thinking of legal/tax people wading though these EDI-files. ;-))
 * it might be needed to  keep the original in case there are any errors or discrepancies that need to be investigated later.
 
 The (default) 30 days of the current archive is a compromise between **keep all data always** and performance. If all data are kept, performance will degrade in the long run.
@@ -64,7 +64,7 @@ After a few days this will looks someting like:
                                       13893479
 
 .. note::
-    It is strongly advised to archive the file outside of the bots directories!
+    It is strongly advised to archive outside of the bots directories.
 
 .. rubric::
     Additional options for long term archive

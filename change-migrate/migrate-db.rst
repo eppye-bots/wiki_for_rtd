@@ -18,7 +18,7 @@ Depending on the approach and the amount of data, several methods could be used.
     * Use a tool that allows you to edit files within the zip and re-save them (eg. `IZArc <http://www.izarc.org/>`_ works for this)
     * Alternatively, unzip the whole directory structure, make your changes, then zip it again. Make sure the same structure is kept.
     * Plugin contains all configuration, you can remove files that are not required (eg. usersys files)
-    * The file ``botsindex.py`` contains all of the database configuration. You can edit this file and delete records not required. Be careful to keep linked records (eg. channels used by a route). The layout of this file is not very user-friendly, you will need to use "find" in your editor a lot! Records are grouped by type, do not re-arrange their sequence.
+    * The file ``botsindex.py`` contains all of the database configuration. You can edit this file and delete records not required. Be careful to keep linked records (eg. channels used by a route). The layout of this file is not very user-friendly, you will need to use "find" in your editor a lot. Records are grouped by type, do not re-arrange their sequence.
 * Using SQL (dump, insert)
     * If you have a large volume of data to migrate, this will probably be faster.
     * add details of how to do this here (I am testing this)

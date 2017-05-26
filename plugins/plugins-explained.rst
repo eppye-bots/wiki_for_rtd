@@ -11,4 +11,4 @@ Plugins Explained
 * There is no un-install.
 * Beware if you make a plugin and share this: do not use e.g. password for an email account.
 * Plugins contain source code. This is a potentially security risk. Use only plugins from trusted sources.
-* Grammars for edifact and x12 are NOT plugins, and can not be installed!
+* Grammars for edifact and x12 are NOT plugins, and can not be installed.

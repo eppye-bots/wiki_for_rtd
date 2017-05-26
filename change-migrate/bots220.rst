@@ -32,7 +32,7 @@ Migration notes
             "django.core.context_processors.i18n",
             "django.core.context_processors.media",
             "django.core.context_processors.request",
-            "bots.bots_context.set_context",    #THIS LINE IS ADDED!
+            "bots.bots_context.set_context",    #THIS LINE IS ADDED
         )
 
     **Compatibility**

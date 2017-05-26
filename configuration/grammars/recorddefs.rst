@@ -107,7 +107,7 @@ A composite has:
     * '+' is accepted at beginning. Bots does not output '+'
     * Thousands separators are removed if specified in syntax-parameter 'triad' (see above).
     * Bots does not output thousands separators
-    * default decimal separator is '.'; use syntax-parameter 'decimaal' to change this ('decimaal' is Dutch, sorry about that. Noticed to late to change ;-)). Internally bots only uses/accepts decimal point!
+    * default decimal separator is '.'; use syntax-parameter 'decimaal' to change this ('decimaal' is Dutch, sorry about that. Noticed to late to change ;-)). Internally bots only uses/accepts decimal point.
     * (incoming) leading zeros are removed
     * (incoming) trailing zeros are kept
     * '.45' is converted to '0.45'.

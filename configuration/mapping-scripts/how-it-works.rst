@@ -27,14 +27,14 @@ How Mapping Works
         #Fetch the dates like this: 
         out.put({'BOTSID':'HEA','ORDERDATE':inn.get({'BOTSID':'UNH'},{'BOTSID':'DTM','C507.2005':'137','C507.2380':None})})     #get statement ONLY looks for DTM with qualifier 137
         out.put({'BOTSID':'HEA','DELIVERY_DATE':inn.get({'BOTSID':'UNH'},{'BOTSID':'DTM','C507.2005':'2','C507.2380':None})})
-        #please note: no looping over the DTM-records, just get the data!
+        #please note: no looping over the DTM-records, just get the data.
 
         #The orderlines are in a LIN-recordgroup; so we want each line in its own fixed LIN-record.
         #start looping the lines (LIN-segments) in the incoming message:
         for lin in inn.getloop({'BOTSID':'UNH'},{'BOTSID':'LIN'}):
             #write a fixed LIN record:
             lou = out.putloop({'BOTSID':'HEA'},{'BOTSID':'LIN'})
-            #Note: in this loop get() is used on the lin-object, and put() is used for the lou-object!
+            #Note: in this loop get() is used on the lin-object, and put() is used for the lou-object.
             lou.put({'BOTSID':'LIN','LINENUMBER':lin.get({'BOTSID':'LIN','1082':None})})
             lou.put({'BOTSID':'LIN','ARTICLE_GTIN':lin.get({'BOTSID':'LIN','C212.7140':None})})
             lou.put({'BOTSID':'LIN','QUANTITY':lin.get({'BOTSID':'LIN'},{'BOTSID':'QTY','C186.6063':'21','C186.6060':None})})
@@ -88,7 +88,7 @@ Detailed information about get, getloop, put, putloop is :doc:`here <mapping-fun
         #Inn-get() either return a value, or 'None'. Look at the next line:
         out.put({'BOTSID':'UNH'},{'BOTSID':'DTM','C507.2005':'137','C507.2380':inn.get({'BOTSID':'HEA','ORDERDATE':None})})    
         #if there is no ORDERDATE in the HEA record, put() receives a 'None'-value. 
-        #Nothing will be written to the outgoing message! 
+        #Nothing will be written to the outgoing message.
 
         #in the next lines 2 values from the inhouse record are written to the same record:
         out.put({'BOTSID':'UNH'},{'BOTSID':'NAD','3035':'DP','C082.3055':'9','C082.3039':inn.get({'BOTSID':'HEA','DELIVERYPLACE_ID':None})})

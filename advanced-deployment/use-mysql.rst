@@ -1,7 +1,7 @@
 Use MySQL or PostgreSQL as Database
 ===================================
 
-* Default bots uses a SQLite database. This is included in the standard installation and works out-of-the-box. Performance of SQLite is good!
+* Default bots uses a SQLite database. This is included in the standard installation and works out-of-the-box. Performance of SQLite is good.
 * Bots always uses ``utf-8`` in the database communication.
 * Database tables are installed using ``django-machinery``. See django docs.
 * After installation, you may want to :doc:`migrate some data <../change-migrate/migrate-db>`.
@@ -148,4 +148,4 @@ MySQL on Windows
             # Path to the database root
             datadir=D:/MySQL Server 5.5/Data
 
-    #. Restart the MySQL service. If it will not start, check permissions!
+    #. Restart the MySQL service. If it will not start, check permissions.

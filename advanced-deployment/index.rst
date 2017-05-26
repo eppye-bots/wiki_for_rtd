@@ -8,7 +8,6 @@ We will be covering the following topics in this section:
 #. Use MySQL or PostgreSQL as the Bots database.
 #. Use AS2 as a communication method.
 #. Bots has options to push changes from test to production.
-#. Information about performance.
 
 
 .. toctree::
@@ -21,4 +20,3 @@ We will be covering the following topics in this section:
     use-mysql
     use-as2
     change-management
-    performance

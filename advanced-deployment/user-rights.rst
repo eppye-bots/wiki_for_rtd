@@ -19,7 +19,7 @@ These users may also see the Configuration and Run menu items, depending on spec
 These users can also see the Systasks menu. They have access to all Configuration and Run options without being specifically given permission. The default user (bots) is a superuser.
 
 .. note:: 
-    Recommendation: Create user names according to your company policy. Disable the default user or change the password; anybody can find out the default user/password for bots!
+    Recommendation: Create user names according to your company policy. Disable the default user or change the password; anybody can find out the default user/password for bots.
 
 **User Permissions for Staff status users**
 

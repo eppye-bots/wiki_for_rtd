@@ -75,7 +75,7 @@ Normally, Bots will detect and prevent this, by stopping after 10 iterations of 
 
 .. code-block:: python
 
-    # we MUST have a way to exit the loop!
+    # we MUST have a way to exit the loop.
     if (some condition):
         return
 

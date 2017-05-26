@@ -146,7 +146,7 @@ Using python virtualenv tool
     **Install Bots in a virtual environment**
 
     First, activate the required environment.
-    Install Bots and dependencies using pip (don't use the Bots Windows installer, because it installs to the default python folder!)
+    Install Bots and dependencies using pip (don't use the Bots Windows installer, because it installs to the default python folder)
 
     * Install Bots from local downloaded .tar.gz file
     
@@ -227,7 +227,7 @@ Using python virtualenv tool
 
             (bots310) D:\PythonEnv>
         
-    * Install cdecimal (optional, improves :doc:`performance <../advanced-deployment/performance>`)
+    * Install cdecimal (optional, improves :doc:`performance <../overview/performance>`)
     
         This will not install/compile correctly on Windows using pip, and the installer is an msi (not exe) so easy_install won't work either. You can install it manually though; the two files needed are ``cdedimal.pyd`` and ``cdecimal-2.3-py2.7.egg-info`` and they go in your virtual environment's ``site-packages`` directory. There are two ways to get these files.
 

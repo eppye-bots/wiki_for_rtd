@@ -34,7 +34,7 @@ which will have the grammer:
 
     recorddefs = {
     'HEADER':[    
-        ['BOTSID','M',6,'A'],            #Note: BOTSID is ALWAYS needed!
+        ['BOTSID','M',6,'A'],            #Note: BOTSID is ALWAYS needed
         ['order number', 'M', 17, 'AN'],
         ['buyer ID', 'M', 13, 'AN'],
         ['delivery date', 'C', 8, 'AN'],

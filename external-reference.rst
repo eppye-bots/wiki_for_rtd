@@ -1,6 +1,7 @@
 External reference links
 ========================
 
+
 EDI
 ---
 
@@ -15,10 +16,11 @@ EDI
 .. note::
     Some of these pages are provided by companies promoting their own EDI services or software, but contain some good information.
 
+
 Python
 ------
 
-You don't need to know a lot about Python to get started with bots, but it will help you to do more advanced mapping and user scripts (or even add new features to bots code!)
+You don't need to know a lot about Python to get started with bots, but it will help you to do more advanced mapping and user scripts (or even add new features to bots code)
 
 * `Beginners Guide <http://wiki.python.org/moin/BeginnersGuide>`_, New to programming? Python is free and easy to learn if you know where to start! This guide will help you to get started quickly.
 * `Simple Programs <http://wiki.python.org/moin/SimplePrograms>`_, Gives around 30 simple working code samples, gradually introducing more advanced concepts.

@@ -49,5 +49,5 @@ Debugging
 - If you start using python debugger (pdb) you are definitly on the wrong track.
 - Be careful with character-set/encoding.
 
-    - Can your editor handle this? Be careful with editing files and saving these again, you might run into issues with character-set/encodings!
+    - Can your editor handle this? Be careful with editing files and saving these again, you might run into issues with character-set/encodings.
     - Are you familiar with the character-set you use? Are you familiar with eg utf-8? If not, please check this first.

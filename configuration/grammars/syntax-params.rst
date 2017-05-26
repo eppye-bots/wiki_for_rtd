@@ -22,7 +22,7 @@ Usage and Overriding
 Syntax parameters can be set at different places; these settings override (somewhat luke CSS).
 The order in which overriding is done:
 
-* default values are in ``bots/grammars.py`` (per editype). **Do not change these values!**
+* default values are in ``bots/grammars.py`` (per editype). **Do not change these values here**
 * envelope grammar (eg for x12: ``bots/usersys/grammars/x12/x12.py``, for edifact: ``bots/usersys/grammars/edifact/edifact.py``)
 * message grammar
 * frompartner grammar (eg in ``bots/usersys/partners/x12/partnerID.py``)

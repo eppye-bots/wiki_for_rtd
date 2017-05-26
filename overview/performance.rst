@@ -11,7 +11,7 @@ Performance
 * (bots >= 3.1) Do not use ``get_checklevel=2`` in ``config/bots.ini``. This does extended checking of mpath's, use this during development only.
 * (bots >= 3.0) Schedule bots-engine via the job queue server.
 * For xml: check if the c-version of python's elementtree is installed and used.
-* Enough memory is important for performance: disk-memory swapping is slow! Actual memory usage depends on size of edi-files.
+* Enough memory is important for performance: disk-memory swapping is slow. Actual memory usage depends on size of edi-files.
 * Check mappings for slow/inefficient algorithms.
 * Bots works with `pypy <www.pypy.org>`_, see below on this page.
 * Use SSD for faster reading/writing. In ``config/bots.ini`` the ``botssys-directory`` can be set, in ``config/settings.py`` the place of the SQLite-database.
@@ -38,7 +38,7 @@ Performance
 #. Tests are done using file system I/O (no testing of communication performance).
 #. Tests done in one run of bots-engine.
 #. Test system: Intel Q9400 2.66GHz; 4Gb memory; ubuntu 10.04(lucid); python 2.7; default SQLite database.
-#. Please note that these tests are **artificial**: if you have such high volumes and big files look at good scheduling!
+#. Please note that these tests are **artificial**: if you have such high volumes and big files look at good scheduling.
 #. Tests are with edifact; x12 performance is the same.
 
 .. csv-table::
@@ -73,4 +73,4 @@ Results of the first tests with pypy (beta-versions of pypy 2.0):
     * MySQL database connector: version 1.2.5 does. Note that bots 3.1.0 gave am error with this version, a patch was easy.
     * paramiko (for SFTP/SSH): no, dependency pycrypto is not supported.
 
-This looks like a very interesting development!
+This looks like a very interesting development.

@@ -16,7 +16,7 @@ Plugins
 * An easy way to distribute and share edi configurations for bots.
 * Learn from existing configurations
 * Backup your configuration.
-* Share your configuration with others (It would be nice if you want to share your configuration; other can use and/or learn from what you have done!).
+* Share your configuration with others (It would be nice if you want to share your configuration; other can use and/or learn from what you have done.).
 * Do another install of the same configuration.
 * Transfer your environment from test to production.
 * Plugins are used to update to a new version of bots (only between minor versions).

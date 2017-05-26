@@ -187,7 +187,7 @@ If running Bots on a Windows server, you can create services to keep the importa
 
 * **srvany.exe** - This is a Microsoft utility included in the `Windows Server Resource Kit Tools <http://www.microsoft.com/download/en/details.aspx?id=17657>`_.
 * **sc.exe** - The SC command is included by default in most Windows installations and is also available in the resource kit.
-* Python and Bots are already installed and working, of course!
+* Python and Bots are already installed and working, of course.
 
 **Procedure**
 

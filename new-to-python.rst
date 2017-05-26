@@ -32,4 +32,4 @@ New to python?
 
 **Feedback**
 
-    Please share your experiences and tips via the `mailing list <http://groups.google.com/forum/#!forum/botsmail>`_!
+    Please share your experiences and tips via the `mailing list <http://groups.google.com/forum/#!forum/botsmail>`_.

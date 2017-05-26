@@ -4,7 +4,7 @@ Plugins at SourceForge
 Downloads at `the bots sourceforge site <http://sourceforge.net/projects/bots/files/plugins/>`_
 
 * my_first_plugin
-    * This plugin is used in the the :doc:`tutorial <../quick-start-guide/index>`.
+    * This plugin is used in the the :doc:`Quick Start Guide<../quick-start-guide/index>`.
     * edifact ORDERS to fixed records.
 * edifact2xml_ordersdesadvinvoice
     * The most used edifact messages in one package.

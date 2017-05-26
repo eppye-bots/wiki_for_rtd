@@ -4,7 +4,7 @@ Installation FAQ
 **I try to install bots at Windows 7/10, but.....**
     * Probably a rights problem - you'll have to have administrator rights in order to do a proper install.
     * Right click the installer program, and choose 'Run as Administrator'.
-    * sometimes the shortcut is not installed in the menu, and you will have to make this manually. See StartGetBotsRunning
+    * sometimes the shortcut is not installed in the menu, and you will have to make this manually.
     
 **Does bots have edifact and x12 messages installed out-of-the-box?**
     No. But this can be downloaded on the sourceforge site either as part of a working configuration (plugin) of separate (grammars).

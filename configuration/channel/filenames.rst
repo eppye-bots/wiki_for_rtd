@@ -47,7 +47,7 @@ Some examples are shown in the table below.
     "{editype}_{messagetype}_{datetime:%Y%m%d}_*.{infile:ext}", "use editype, messagetype, date and unique number with extension from the incoming file", "edifact_ORDERSD93AUN_20120926_39724.edi"
     "{frompartner}/{editype}/{infile}", "You can also use subdirectories in the filename, but they must already exist. These will be appended to the path.", "KMART/edifact/Order001.edi"
     "{frompartner}/INPUT/ORDER_{botskey}.csv", "Fixed values can also be included as part of the directory structure or filename", "KMART/INPUT/ORDER_BA7358-0.csv"
-    "{overwrite}daily_report.txt", "Force overwriting of a file if it exists. **Use this with caution; make sure it is really what you want!** May be required on some sftp servers that do not support append mode.", "daily_report.txt"
+    "{overwrite}daily_report.txt", "Force overwriting of a file if it exists. **Use this with caution; make sure it is really what you want.** May be required on some sftp servers that do not support append mode.", "daily_report.txt"
     "{infile[4]}{infile[5]}{infile[6]}{infile[7]}.xml", "This functionality uses the Python `Format String Syntax <http://docs.python.org/2/library/string.html#formatstrings>`_ which does not have support for **slicing**, but you can use this workaround to pick a range of single characters. **Beware: this does not check for wrong string positions.**", "infile: INV_7389.txt generates: 7389.xml"
     
 .. warning::

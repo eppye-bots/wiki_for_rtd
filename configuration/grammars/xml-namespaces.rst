@@ -1,7 +1,7 @@
 XML Namespaces
 ==============
 
-Dealing with xml namespaces can be a bit difficult in Bots. They can greatly complicate grammars and mappings. Often your EDI partner will want to send or receive XML with namespaces, but actually Bots does not need (or want) them as there are rarely any naming conflicts within a single XML file!
+Dealing with xml namespaces can be a bit difficult in Bots. They can greatly complicate grammars and mappings. Often your EDI partner will want to send or receive XML with namespaces, but actually Bots does not need (or want) them as there are rarely any naming conflicts within a single XML file.
 
 Where an XML file has only one namespace, usually the "default" namespace is used.
 eg. ``xmlns="schemas-hiwg-org-au:EnvelopeV1.0"``
@@ -231,7 +231,7 @@ There are several ways to deal with namespaces in Bots:
 
 #. **Outgoing XML with specific namespace prefixes**
 
-    Your EDI partner may request a specific namespace prefix be used; This is technically un-necessary and bad design, but they may insist on it anyway!
+    Your EDI partner may request a specific namespace prefix be used; This is technically un-necessary and bad design, but they may insist on it anyway.
 
     Example Grammar
 

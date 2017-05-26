@@ -5,15 +5,13 @@ Purpose of the chapter of this wiki is to give some global overview for bots ope
 
 An overview of features is on `sourceforge <http://bots.sourceforge.net/en/about_features.shtml>`_.
 
-**Table of Contents:**
-
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
-   the-name-bots
-   techincal-overview
+   performance
+   technical-overview
    directories-files
    configuration-files
    glossary 
