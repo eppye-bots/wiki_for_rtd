@@ -14,7 +14,7 @@ To handle these problems bots has some features called *configuration change man
 
 Configuration change management in bots has 2 aspects:
 
-#. Use `tools <../useful-tools.html#compare-and-merge>`_ for:
+#. Use :doc:`tools <../useful-tools>` for:
     * Comparing differences in configuration of environments
     * Pushing the changes from test->production environment in a controlled, automated way
 #. Use of `isolated acceptance test <#isolated-acceptance-testing>`_ to:
@@ -23,6 +23,7 @@ Configuration change management in bots has 2 aspects:
     * make the test-environment (very) equal to production-environment
 
 Configuration change management works best if both aspects are combined!. See `recipe <#recipe-to-push-test-production>`_ for this.
+
 
 Isolated Acceptance Testing
 ---------------------------
@@ -88,13 +89,13 @@ Isolated Acceptance Testing
             * Database communication: script should check explicitly if in acceptance test and act accordingly.
 
 
-Recipe to push *test->production*
----------------------------------
+Recipe to push test->production
+-------------------------------
 
-    Recipe to use a standard `directory comparison tool <../useful-tools.html#compare-and-merge>`_ to manage the differences in configuration between test and production:
+    Recipe to use a standard directory comparison tool to manage the differences in configuration between test and production:
 
     #. For both environments, make configuration index file (``menu->Systasks->Make configuration index``)
-    #. Compare both environments using a `directory comparison tool <../useful-tools.html#compare-and-merge>`_. What you should compare is:
+    #. Compare both environments using a directory comparison tool. What you should compare is:
         * All files in ``bots/usersys``.
         * Note that the file ``bots/usersys/index.py`` contains the configuration as in the database (routes, channels, partners).
     #. Push changes using the tool.
