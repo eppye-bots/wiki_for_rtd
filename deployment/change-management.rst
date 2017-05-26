@@ -14,7 +14,7 @@ To handle these problems bots has some features called *configuration change man
 
 Configuration change management in bots has 2 aspects:
 
-#. Use :doc:`tools <../useful-tools>` for:
+#. Use :doc:`tools <../div/useful-tools>` for:
     * Comparing differences in configuration of environments
     * Pushing the changes from test->production environment in a controlled, automated way
 #. Use of `isolated acceptance test <#isolated-acceptance-testing>`_ to:

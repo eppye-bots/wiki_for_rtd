@@ -34,7 +34,7 @@ Guide For Bots-Monitor
 * In view screens, you can see the contents of an edi file if you click on the file name.
 * When viewing the contents of an edi file, you can go backwards and forwards to see the processing steps of the file.
 * Might be handy to use tabbed browsing.
-* Bots uses user rights (viewers, administrators and superuser). See :doc:`setting user rights <../advanced-deployment/user-rights>`
+* Bots uses user rights (viewers, administrators and superuser). See :doc:`setting user rights <../deployment/user-rights>`
 
 
 .. toctree::

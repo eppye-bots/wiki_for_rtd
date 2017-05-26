@@ -28,7 +28,7 @@ New to python?
 **Installing extra libraries/dependencies**
 
     * For linux lots of `information about installing libraries is here <https://code.google.com/p/bots/wiki/StartInstalllinux>`_. Think this is also useful for windows.
-    * A advanced method is using `virtualenv <https://code.google.com/p/bots/wiki/DeploymentMultipleEnvironmentsVirtual>`_.
+    * A advanced method is using **virtualenv**
 
 **Feedback**
 

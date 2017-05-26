@@ -1,6 +1,6 @@
 
-Welcome to documentation for Bots
-=================================
+Welcome to bots
+===============
 
 * **Bots** is fully functional software for `EDI (Electronic Data Interchange) <https://en.wikipedia.org/wiki/Electronic_data_interchange>`_. 
 * All major EDI data formats are supported: EDIFACT, X12, TRADACOMS, XML. 
@@ -64,13 +64,9 @@ I think everybody who started with edi has gone through this.
    guide-for-botsmonitor/index
    configuration/index
    deployment/index
-   advanced-deployment/index
    faq/index
    debugging
    plugins/index
    overview/index
    change-migrate/index
-   useful-tools
-   tutorials/index
-   external-reference
-   new-to-python
+   div/index

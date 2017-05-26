@@ -1,4 +1,4 @@
-Troubleshooting/FAQ
+Troubleshoot/FAQ
 ===================
 
 **Why is it called 'bots'? Where are the bots?**

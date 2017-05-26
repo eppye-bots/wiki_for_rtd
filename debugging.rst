@@ -1,5 +1,5 @@
-Debugging
-=========
+Debugging in bots
+=================
 
 
 **Basics: use bots-monitor/GUI**

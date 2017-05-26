@@ -1,5 +1,5 @@
-Confirmations/Acknowledgements
-==============================
+Confirm/acknowledge/997
+=======================
 
 In edi often a confirmation (or acknowledgement) is needed. Bots has a built-in confirmation framework that supports:
 

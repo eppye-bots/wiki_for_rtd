@@ -4,9 +4,10 @@ Configuration Files
 * Bots has two configuration files.
 * Mostly the defaults will be OK to get started, but you may need to customize these to your own needs.
 * Settings are documented in the files.
-* Open these files in your :doc:`text editor <../useful-tools>`.
-* The configuration files are located in the ``bots/config`` directory (except when using :doc:`multiple environments <../deployment/multiple-environments>`).
+* Open these files in your :doc:`text editor <../div/useful-tools>`.
+* The configuration files are located in the ``bots/config`` directory.
 * The original default versions can be found in the ``bots/install`` directory.
+
 
 bots.ini
 --------
@@ -18,6 +19,7 @@ bots.ini
     * Debugging options
     * Webserver settings (eg port)
     * Directory settings
+
 
 settings.py
 -----------

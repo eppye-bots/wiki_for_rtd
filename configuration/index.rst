@@ -1,10 +1,10 @@
-Configuration
+Configure edi
 =============
 
 * Out of the box bots does nothing. You have to configure bots for your specific edi requirements. 
 * Check out different ways to start your own :doc:`configuration<how-to-configuration>`. 
 * See :doc:`debug <../debugging>` overview for info how to debug while making a configuration. 
-* Bots also has nice features for :doc:`configuration change management <../advanced-deployment/change-management>` (build test sets for you configuration, easier pushing of changes from test to production).
+* Bots also has nice features for :doc:`configuration change management <../deployment/change-management>` (build test sets for you configuration, easier pushing of changes from test to production).
 
 
 **Configuration explained in short**

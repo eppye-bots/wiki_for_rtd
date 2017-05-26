@@ -1,5 +1,5 @@
-Installation
-============
+Install
+=======
 
 Bots works on operating systems with python installed. Confirmed is:
 

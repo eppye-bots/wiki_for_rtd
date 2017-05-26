@@ -115,7 +115,7 @@ Changes
     #. Dropped 'retry communication'. Use 'resend', easier and more consistent.
     #. Add: use 'channel' in selects (eg useful for resend selects).
 
-    **Configuration change management :doc:`see wiki <../advanced-deployment/change-management>`**
+    **Configuration change management :doc:`see wiki <../deployment/change-management>`**
 
     #. Use tools to push changes test-> production
         #. Via GUI: write database configuration to usersys in order to compare environments.

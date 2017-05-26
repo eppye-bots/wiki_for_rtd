@@ -1,7 +1,7 @@
 Migrate Database
 ================
 
-If you choose to use :doc:`another database <../advanced-deployment/use-mysql>` rather than SQLite, you may want to migrate some or all of your data. You may also migrate data between development and production environments. There are several approaches to this, depending on your needs.
+If you choose to use :doc:`another database <../deployment/use-mysql>` rather than SQLite, you may want to migrate some or all of your data. You may also migrate data between development and production environments. There are several approaches to this, depending on your needs.
 
 * Migrate all configuration and transactional data
 * Migrate only the configuration, start fresh with transactional data

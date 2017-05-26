@@ -49,7 +49,7 @@ Example of a more elaborate structure:
     * **MAX**: maximum number of occurrences.
     * **LEVEL** (optional): indicate nested record. The nested records are in a list of records.
     * **QUERIES** (optional)
-    * **SUBTRANSLATION** (optional). Very advanced. Purpose: identify separate messages within within a standard envelope.
+    * **SUBTRANSLATION** (optional). Advanced. Purpose: identify separate messages within within a standard envelope.
 
 QUERIES
 -------

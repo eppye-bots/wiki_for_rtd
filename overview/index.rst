@@ -14,4 +14,3 @@ An overview of features is on `sourceforge <http://bots.sourceforge.net/en/about
    technical-overview
    directories-files
    configuration-files
-   glossary 

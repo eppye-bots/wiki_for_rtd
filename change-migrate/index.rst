@@ -1,7 +1,8 @@
-Changes and Migrate
-===================
+Changes, migration
+==================
 
-* Details about changes in new versions and how to migrate/upgrade to newer bots versions.
+* Details about changes in new versions
+* How to migrate/upgrade to newer bots versions.
 * In general, try to upgrade to new bots version, especially if the version is upward compatible.
 * Most of the time migration is easy.
 * Grammars and mappings have always worked for different versions.

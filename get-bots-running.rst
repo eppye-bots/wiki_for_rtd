@@ -14,7 +14,7 @@ Main components of bots
 
         out-of-the-box bots-monitor uses plain HTTP and is not secure. Advised is either:
             * do not use bots-monitor over a public network (such as Internet)
-            * secure the connection using :doc:`HTTPS/SSL <advanced-deployment/bots-https>`.
+            * secure the connection using :doc:`HTTPS/SSL <deployment/bots-https>`.
 #. Bots-webserver: 
     * Program that serves web pages to bots-monitor. 
     * The bots-webserver has to run in order to use bots-monitor.
