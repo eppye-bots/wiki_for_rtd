@@ -21,14 +21,10 @@ Plugins
 * Transfer your environment from test to production.
 * Plugins are used to update to a new version of bots (only between minor versions).
 
-.. note::
-    All bots 3.0.0 plugins are suited to use in `acceptance test mode <../advanced-deployment/change-management.html#isolated-acceptance-testing>`_.
-
-.. rubric::
-    Index
 
 .. toctree::
     :maxdepth: 2
+    :hidden:
 
     install-plugin
     make-plugin

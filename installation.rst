@@ -20,14 +20,14 @@ Windows
 #. Install Python
     #. Check if Python is already installed.
     #. Use python 2.7; Python >= 3.0 does not work.
-    #. Download Python installer `here <http://www.Python.org>`_.
+    #. Download `Python installer <http://www.Python.org>`_.
     #. Install python (double-click).
 #. Install bots
     #. Download `bots installer <http://sourceforge.net/projects/bots/files/bots%20open%20source%20edi%20software/>`_.
     #. Install bots (double-click).
     #. Installation takes some time; be patient. During the installation the libraries bots needs are installed.
     #. You will be notified if the installation went OK.
-    #. If not: contact us via the `mailing list <http://groups.google.com/group/botsmail/topics>`_.
+    #. If not: contact is via the `mailing list <http://groups.google.com/group/botsmail/topics>`_.
 
 .. note::
 
@@ -45,7 +45,7 @@ So a standard python source code install is done.
     #. Check if Python is already installed - most of the time python is already installed on ``*nix``. Use python 2.6 or 2.7. (not python >= 3.0).
     #. If not: use package manager or see python web site.
 #. Install dependencies/libraries
-    * See `list of dependencies <installation.html#dependencies>`_.
+    * See `list of dependencies <#dependencies>`_.
     * Easiest is to use your package manager for installing.
 #. Install bots
     #. Download `bots installer <http://sourceforge.net/projects/bots/files/bots%20open%20source%20edi%20software/>`_ (e.g. bots-3.1.0.tar.gz)
@@ -159,29 +159,5 @@ Optional:
 Install FAQ
 -----------
 
-#. I try to install bots at Windows 7/10, but.....
-
-    * Probably a rights problem - you'll have to have administrator rights in order to do a proper install.
-    * Right click the installer program, and choose 'Run as Administrator'.
-    * sometimes the shortcut is not installed in the menu, and you will have to make this manually. See StartGetBotsRunning
-    
-#. Does bots have edifact and x12 messages installed out-of-the-box?
-
-    * No. But this can be downloaded on the sourceforge site either as part of a working configuration (plugin) of separate (grammars).
-    
-#. Bots is not working on linux - rights problems.
-
-    * Start bots-webserver and bots-engine with sufficient rights - e.g. as root.
-    * Change the owner/rights of the files in botssys, usersys and config; run bots-webserver/bots-engine without root rights.
-    
-#. **During windows installation; Error**:
-
-    .. code-block:: console 
-
-        close failed in file object destructor:
-        sys.excepthook is missing
-        lost sys.stderr
-
-    * seems to happen when UAC is turned off.
-    * Actually bots just seems to be installed OK, and works OK.....
-    * Fixed this in version 3.2
+.. include:: faq/installfaq.rst
+    :start-line: 2

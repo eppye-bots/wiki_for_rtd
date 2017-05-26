@@ -17,13 +17,13 @@ How the input values for the look-up are determined:
     * in incoming edi file bots finds detail messagetype **ORDERSD96AUN**.
 #. frompartner can be:
     * configured in the route
-    * determined by the grammar using `QUERIES <../grammars/structure.html#queries>`_
+    * determined by the grammar using QUERIES
 #. topartner can be:
     * configured in the route
-    * determined by the grammar using `QUERIES <../grammars/structure.html#queries>`_
+    * determined by the grammar using QUERIES
 #. alt can be:
     * configured in the route
-    * determined by the grammar using `QUERIES <../grammars/structure.html#queries>`_
+    * determined by the grammar using QUERIES
     * set by mapping script in a :doc:`chained translation <chained-translations>`
 
 .. note::

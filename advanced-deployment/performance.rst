@@ -18,9 +18,9 @@ Performance
 
 **Strategy for bigger edi volumes**
 
-* Best strategy is to `schedule <../deployment/run-botsengine.html#scheduling-bots-engine>`_ bots-engine more often.
-* (bots >= 3.0) Schedule bots-engine via the `job queue server <../deployment/run-botsengine.html#job-queue-server-bots-3-0>`_.
-* Routes can be `scheduled independently <../deployment/run-botsengine.html#scheduling-bots-engine>`_.
+* Best strategy is to :ref:`schedule <schedule-bots-engine>` bots-engine more often.
+* (bots >= 3.0) Schedule bots-engine via the :ref:`jobqueue server <job-queue-server>`.
+* Routes can be :ref:`scheduled independently<schedule-bots-engine>`.
 * Set-up good scheduling, keeping volumes in mind.
 * EDI in the real world has often large peaks.
 * Dome edi transactions are time critical (eg orders), others not so much (eg invoices)
@@ -62,7 +62,7 @@ Performance
 
 **Testing with pypy**
 
-`pypy <www.pypy.org>`_ s a python implementation that is faster by using a JIT (that is one of their achievements).
+`pypy <www.pypy.org>`_ s a python implementation that is faster by using a JIT.
 Results of the first tests with pypy (beta-versions of pypy 2.0):
 
 * Bots works with pypy.

@@ -2,7 +2,7 @@ Guide For Bots-Monitor
 ======================
 
 .. note::
-    The :doc:`tutorial<../quick-start-guide/index>` contains some detailed information and screen-shots of bots-monitor!
+    The :doc:`tutorial<../quick-start-guide/index>` contains some detailed information and screen-shots of bots-monitor.
 
 **Menu in bots-monitor**
 
@@ -37,10 +37,8 @@ Guide For Bots-Monitor
 * Bots uses user rights (viewers, administrators and superuser). See :doc:`setting user rights <../advanced-deployment/user-rights>`
 
 
-
-**More**
-
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    how-to-rereceive

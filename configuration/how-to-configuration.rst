@@ -17,7 +17,7 @@ How to do configuration
     * Check a grammar using the command line tool ``bots-grammar.py``.
 #. A step by step description (next section) of making a configuration.
 #. If you are doing your own configuration check out how to :doc:`debug <../debugging>`
-#. Hire us (`EbbersConsult <http://www.ebbersconsult.com/>`_ - the makers of Bots) to help you with configuring bots: we are the edi experts.
+
 
 DIY step by step
 ----------------

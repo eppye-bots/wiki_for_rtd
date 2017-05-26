@@ -22,5 +22,4 @@ You don't need to know a lot about Python to get started with bots, but it will 
 
 * `Beginners Guide <http://wiki.python.org/moin/BeginnersGuide>`_, New to programming? Python is free and easy to learn if you know where to start! This guide will help you to get started quickly.
 * `Simple Programs <http://wiki.python.org/moin/SimplePrograms>`_, Gives around 30 simple working code samples, gradually introducing more advanced concepts.
-* `Google's Python Class <http://code.google.com/edu/languages/google-python-class/>`_, This is a free class for people with a little bit of programming experience who want to learn Python. The class includes written materials, lecture videos, and lots of code exercises to practice Python coding.
 * `String Methods <http://docs.python.org/library/stdtypes.html#string-methods>`_, These are often used to manipulate string data in mapping scripts.

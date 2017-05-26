@@ -27,10 +27,9 @@ Notes on naming conventions:
     Bots does client communicates (no server). If you need a communication server (eg for ftp, as2), use a separate server.
 
 
-**Index**
- 
 .. toctree::
    :maxdepth: 2
+   :hidden:
     
    standard-comms
    database

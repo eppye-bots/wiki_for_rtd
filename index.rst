@@ -53,10 +53,10 @@ I think everybody who started with edi has gone through this.
 
 
 
-Table of Contents:
-------------------
 .. toctree::
    :maxdepth: 2
+   :numbered:
+   :hidden:
     
    installation
    get-bots-running
@@ -65,7 +65,7 @@ Table of Contents:
    configuration/index
    deployment/index
    advanced-deployment/index
-   troubleshooting
+   faq/index
    debugging
    plugins/index
    overview/index

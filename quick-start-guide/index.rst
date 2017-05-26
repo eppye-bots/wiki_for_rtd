@@ -41,10 +41,10 @@ Quick Start Guide
     #. Note: this configuration reads the incoming files but does not delete them. So you can run it over and over again.
 
 
-**More**
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    view-results
    walkthrough-setup

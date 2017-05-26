@@ -10,11 +10,10 @@ There are extra points to consider when deploying bots in a 24x7 production envi
 #. Consider if edi files need :doc:`extra archiving <archiving>`
 #. Out of the box bots does not run as a :doc:`service/daemon <run-as-service>`. In a production enviroment this is what you'll probably want.
 
-.. rubric::
-    Index
 
 .. toctree::
     :maxdepth: 2
+    :hidden:
 
     run-botsengine
     production-errors

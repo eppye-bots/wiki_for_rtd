@@ -19,10 +19,10 @@ Read the 1st translation rule of this screen shot:
 
     Translate ``edifact-ORDERSD96AUNEAN008`` to ``fixed-myinhouseorder`` using mapping script ``ordersedifact2myinhouse.py``
 
-**Index**
 
 .. toctree::
     :maxdepth: 2
+    :hidden:
 
     howitworks
     whatwhen

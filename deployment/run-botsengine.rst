@@ -5,8 +5,8 @@ Options for running bots-engine:
 
 #. Run automatic or manual
     * Manual runs by using the ``run`` options in the menu.
-    * `Schedule <#scheduling-bots-engine>`_ Bots-Engine.
-    * Use the :doc:`directory monitor/watcher <#directory-monitor>`.
+    * `Schedule <#scheduling-bots-engine>`_ bots-engine.
+    * Use the `directory monitor/watcher <#directory-monitor>`_.
     * This can be combined; eg
         * schedule ``new`` every 15minutes
         * manually ``rereceive`` and ``resend``
@@ -21,6 +21,8 @@ Options for running bots-engine:
     * **resend**: resend user indicated edi-files. Via run-menu or command-line: ``bots-engine.py --resend``
     * **automaticretrycommunication**: resend edi-files where out-communication failed. Command-line: ``bots-engine.py --automaticretrycommunication``
 
+
+.. _schedule-bots-engine:
 
 Scheduling Bots-Engine
 ----------------------
@@ -103,6 +105,7 @@ Each task has a corresponding batch file in the scripts directory. This makes ta
     C:\python27\python.exe C:\python27\scripts\bots-job2queue.py -p9 C:\python27\python.exe C:\python27\scripts\bots-engine.py daily_reports SAP_Expired_Contracts
 
 
+.. _Job-Queue-Server:
 
 Job Queue Server
 ----------------
@@ -113,7 +116,7 @@ Purpose of the bots jobqueue is to enable better scheduling of bots engine:
     * no engine runs are lost/discarded.
     * next engine run is started as soon as previous run has ended.
 
-Use of the job queue is optional, but is recommended if `scheduling bots-engine <#scheduling-bots-engine>`_.
+Use of the job queue is recommended if you `schedule bots-engine <#scheduling-bots-engine>`_.
 
 
 Details:
@@ -135,7 +138,7 @@ Details:
 .. rubric::
     Starting with the job queue
 
-#. First, enable in :doc:`bots.ini <../overview/configuration-files#bots.ini>` (jobqueue section, ``enabled = True``).
+#. First, enable in :doc:`bots.ini <../overview/configuration-files>` (jobqueue section, ``enabled = True``).
 #. Start the bots-jobqueueserver. Command-line: ``bots-jobqueueserver.py``.
 #. Put jobs in the job queue:
     * via menu using ``bots-monitor->Run``
@@ -187,7 +190,7 @@ Use of the directory monitor is optional. It may be useful for processing files 
 **Prerequisites**
 
 * Directory monitor uses the `job queue <#job-queue-server>`_.
-* Monitoring must be configured in `bots.ini <../overview/configuration-files.html#bots-ini>`_ (``dirmonitorX`` sections)
+* Monitoring must be configured in :doc:`bots.ini <../overview/configuration-files>` (``dirmonitorX`` sections)
 * Directory monitor :doc:`daemon process <run-as-service>` must be started (``bots-dirmonitor.py``)
 
 

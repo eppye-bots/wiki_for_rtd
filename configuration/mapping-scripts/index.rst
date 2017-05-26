@@ -14,10 +14,10 @@ Mapping Scripts
     * (Bots>=3.0) if an error is raised in a script, other translations for message in same edi-file will continue.
     * (Bots>=3.0) when an error situation is met in script: you can send specific error-email to responsible people.
 
-**Index**
 
 .. toctree::
     :maxdepth: 2
+    :hidden:
 
     how-it-works
     get-from-msg

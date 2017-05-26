@@ -27,10 +27,10 @@ Configuration
 * :doc:`merging and enveloping outgoing edi files <split-merge>`
 * :doc:`partner specific syntax <partner/partner-syntax>` (especially for x12 and edifact)
 
-**Index**
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    how-to-configuration 
    route/index

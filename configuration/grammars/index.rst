@@ -95,11 +95,10 @@ Sometimes you might meet this error for a grammar:
 * EANCOM did make such choices in their implementation guidelines.
 * So: you can not the grammar directly, edit it according to your needs. This is according to what UN-edifact wants...
 
-.. rubric::
-    Index
 
 .. toctree::
     :maxdepth: 2
+    :hidden:
 
     get-grammars
     syntax-params

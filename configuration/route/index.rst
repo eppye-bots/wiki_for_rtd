@@ -22,7 +22,6 @@ To get a route like this working the following must be configured:
 The route above is a simple route; files come from one source, there is one translation, one destination.
 More options are possible using :doc:`composite routes <composite-routes>`.
 
-**Index**
 
 .. toctree::
    :maxdepth: 2

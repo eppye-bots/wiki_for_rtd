@@ -10,11 +10,10 @@ We will be covering the following topics in this section:
 #. Bots has options to push changes from test to production.
 #. Information about performance.
 
-.. rubric::
-    Index
 
 .. toctree::
     :maxdepth: 2
+    :hidden:
 
     user-rights
     bots-https

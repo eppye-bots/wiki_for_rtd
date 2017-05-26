@@ -69,7 +69,7 @@ MySQL on Windows
         mysql> GRANT ALL ON botsdb.* TO 'bots';
          Query OK, 0 rows affected (0.03 sec)
 
-#. Download and install `MySQL-python for Windows <http://www.codegood.com/downloads>`_ to suit your python version (tested ``MySQL-python-1.2.3.win32-py2.7.exe``)
+#. Download and install `MySQL-python for Windows to suit your python version (tested ``MySQL-python-1.2.3.win32-py2.7.exe``)
 #. Set connection parameters in bots configuration in ``bots/config/settings.py``. MySQL example is provided, I only changed HOST.
 
     .. code:: python

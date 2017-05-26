@@ -7,8 +7,10 @@ An overview of features is on `sourceforge <http://bots.sourceforge.net/en/about
 
 **Table of Contents:**
 
+
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    the-name-bots
    techincal-overview

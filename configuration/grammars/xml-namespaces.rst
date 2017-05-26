@@ -13,7 +13,9 @@ There are several ways to deal with namespaces in Bots:
 
 #. **Ignore incoming XML namespace**
 
-    For incoming XML files that are to be mapped into something else, you probably don't need the namespaces at all. In my opinion this is the "best" way. See an :doc:`example preprocessing script <../route/route-scripting>` to achieve this.
+    For incoming XML files that are to be mapped into something else, you probably don't need the namespaces at all. 
+    In my opinion this is the "best" way. 
+    See an :doc:`example preprocessing script <../route/route-scripting>` to achieve this.
 
 #. **Use incoming XML namespace**
 

@@ -11,7 +11,7 @@ After Bots installation there are no service/daemon processes active. This is re
 * bots-dirmonitor.py (bots >= 3.0.0, is optional)
 
 .. note::
-    bots-engine itself is not a daemon process; bots-engine is best `scheduled <run-botsengine.html#scheduling-bots-engine>`_.
+    bots-engine itself is not a daemon process; bots-engine is best :ref:`scheduled <schedule-bots-engine>`.
 
 How these daemons are created and managed depends on the operating system being used:
 
@@ -223,7 +223,10 @@ If running Bots on a Windows server, you can create services to keep the importa
 
 * Run ``services.msc`` to start/stop/configure your new services.
 
-If any of the above doesn't make sense to you, I have created a small free utility program to do it all. This is a general purpose program for creating services. My service configuration for Bots is included; you may need to edit the paths to suit your installation. You can download the program from `here <https://dl.dropboxusercontent.com/u/43043107/CreateWinSrv.zip>`_.
+If any of the above doesn't make sense to you, I have created a small free utility program to do it all. 
+This is a general purpose program for creating services. 
+My service configuration for Bots is included; you may need to edit the paths to suit your installation. 
+You can download the program from `here <https://dl.dropboxusercontent.com/u/43043107/CreateWinSrv.zip>`_.
 
 .. image:: ../images/CreateWinSrv1.png
     :target: https://dl.dropboxusercontent.com/u/43043107/CreateWinSrv.zip

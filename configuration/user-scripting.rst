@@ -6,7 +6,7 @@ Bots has many places (exit points) where user scripting can be used. These user 
 * Channels can have a :doc:`communicationscript <channel/channel-scripting>`
 * Routes can have a :doc:`routescript <route/route-scripting>`
 * Bots-engine can also have `it's own routescript <#route-script-for-bots-engine>`_.
-* Enveloping can be modified with an `envelopescript <split-merge.html#envelope-scripting>`_.
+* Enveloping can be modified with an :doc:`envelopescript<split-merge>`.
 
 Route Script for Bots-engine
 ----------------------------

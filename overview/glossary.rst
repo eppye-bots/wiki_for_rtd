@@ -1,8 +1,6 @@
 Glossary of Terms
 =================
 
-**If you think any term used in the wiki is unclear please leave a comment and I will add it here**
-
 .. csv-table::
 
     "alt","Used for chained translations."

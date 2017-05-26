@@ -18,4 +18,4 @@ Step-by-step:
 #. Find the :doc:`right translation <whatwhen>` for message.
 #. Run the :doc:`mapping script <../mapping-scripts/index>` for message.
 #. Serialize the outmessage-tree to file. This is checked and formatted according to the :doc:`grammar <../grammars/index>` of the outgoing message.
-#. Outgoing messages are `enveloped and/or merged <../split-merge.html#merge-envelope-edi-message>`_.
+#. Outgoing messages are enveloped and/or merged.

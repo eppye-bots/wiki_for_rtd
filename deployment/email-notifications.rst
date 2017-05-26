@@ -24,4 +24,4 @@ Configure this:
 #. To test if it works OK, restart the bots-webserver and bots-monitor->Systasks->Send test report. (I know, the restarting is annoying.).
 
 .. note::
-    Email notifications are not sent while running `acceptance tests <../advanced-deployment/change-management.html#isolated-acceptance-testing>`_.
+    Email notifications are not sent while running acceptance tests.

@@ -67,7 +67,7 @@ Using python virtualenv tool
 
     **Installation**
 
-    #. Install python: You have probably done this already! Make sure you have the paths of your ``python27`` and ``python27\scripts`` included in the `system path variable <http://en.wikipedia.org/wiki/PATH_%28variable%29>`_.
+    #. Install python: You have probably done this already. Make sure you have the paths of your ``python27`` and ``python27\scripts`` included in the `system path variable <http://en.wikipedia.org/wiki/PATH_%28variable%29>`_.
 
     #. Install distribute: Download `distribute_setup.py <http://python-distribute.org/distribute_setup.py>`_ and invoke it using python.
 

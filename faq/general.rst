@@ -1,11 +1,10 @@
-Troubleshooting/FAQ
-===================
-
+General FAQ
+-----------
 
 **Files are 'stuck'**
     Basically bots expects input to lead to output. When a file is 'stuck' input did not lead to output.
     Somehow the setup you made is not OK. Files go in, but nothing comes out.
-    Often this is the problem: Have you put any `filtering <../configuration/route/composite-routes>`_ on the output of your route? (under 'Filtering for outchannel' in the route configuration).
+    Often this is the problem: Have you put any :doc:`filtering <../configuration/route/composite-routes>` on the output of your route? (under 'Filtering for outchannel' in the route configuration).
     Filtering allows you send only particular files via an out-channel; but a file that does not match one of the filters will end up "stuck" because Bots does not know where to send it. 
     If you have only one outchannel, there is no need for filtering.
 
@@ -18,7 +17,7 @@ Troubleshooting/FAQ
     This is usually a permission problem. 
     Remember that if you are running Bots Engine as a daemon/service it may be running under a system user account. 
     Make sure the user has rights to the folder/files, or run the engine with a special user account that does have the required rights. 
-    It is best to use the `bots-jobqueue server <../deployment/run-botsengine#job-queue-server>`_ so that engine runs started from the GUI also run under the special user account.
+    It is best to use the :ref:`jobqueue server <job-queue-server>` so that engine runs started from the GUI also run under the special user account.
 
 **Error in Internet Explorer: 'ValueError: invalid literal for int() with base 10'**
     This has to do with the compatibility-settings of IE (tools->compatibility view settings). 
@@ -31,7 +30,7 @@ Troubleshooting/FAQ
 
 **"root" of incoming message is empty; either split messages or use inn.getloop**
     This may occur with incoming files that have only one record format. 
-    Even if the whole file is one edi message, you need to use `nextmessageblock <../configuration/grammars/nextmessageblock>`_ in your incoming grammar.
+    Even if the whole file is one edi message, you need to use :doc:`nextmessageblock <../configuration/grammars/nextmessageblock>` in your incoming grammar.
 
 **Outgoing files to sftp server result in 'IOError: [Errno 13] Requested operation is not supported.'**
     Error occurs during out-communication via FTP. 
@@ -49,4 +48,3 @@ Troubleshooting/FAQ
 
 **ftp server gives a timeout when writing file (connect is OK)**
     In channel, set the 'FTP active mode' (under FTP specfic).
-
