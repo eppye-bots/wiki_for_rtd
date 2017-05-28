@@ -205,7 +205,7 @@ html_show_copyright = False
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'documentation for bots'
+htmlhelp_basename = 'wiki for bots'
 
 # -- Options for LaTeX output ---------------------------------------------
 

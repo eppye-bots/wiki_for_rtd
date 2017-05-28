@@ -55,7 +55,6 @@ I think everybody who started with edi has gone through this.
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
    :hidden:
     
    installation
