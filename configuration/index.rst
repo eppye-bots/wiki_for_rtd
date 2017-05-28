@@ -1,5 +1,5 @@
-Configure edi
-=============
+Configure bots
+==============
 
 * Out of the box bots does nothing. You have to configure bots for your specific edi requirements. 
 * Check out different ways to start your own :doc:`configuration<how-to-configuration>`. 
