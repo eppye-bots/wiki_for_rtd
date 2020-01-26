@@ -1,31 +1,88 @@
 Run as Service/Daemon
 =====================
 
-.. epigraph::
-    A `daemon <http://en.wikipedia.org/wiki/Daemon_%28computing%29>`_ is a computer program that runs continuously as a background process.
-
-After Bots installation there are no service/daemon processes active. This is recommended for a production environment. Bots has several parts that you may want to run as services/daemons:
+After Bots installation nothing is runnng in the background (service in windows or daemon in linux/unix). Bots has several parts that you may want to run as services/daemons:
 
 * bots-webserver.py
-* bots-jobqueueserver.py (bots >= 3.0.0, is optional)
-* bots-dirmonitor.py (bots >= 3.0.0, is optional)
+* bots-jobqueueserver.py (if you use this)
+* bots-dirmonitor.py (if you use this)
 
 .. note::
-    bots-engine itself is not a daemon process; bots-engine is best :ref:`scheduled <schedule-bots-engine>`.
+    bots-engine is :ref:`scheduled <schedule-bots-engine>`, it is not a daemon/service.
 
-How these daemons are created and managed depends on the operating system being used:
 
-* In linux/unix, you can start them as `Linux daemons <#linux-daemons>`_.
-* In Windows, you can set them up as `Windows Services <#windows-services>`_.
+Windows Services
+----------------
+
+2 ways to do use bots as a service (after Python and bots are installed):
+
+#. Official way, using sc.exe or srvany.exe. It's the mcrosoft way. I never use this.
+
+#. Use `NSSM <http://nssm.cc/>`_
+
+
+.. note::
+    I mostly use the Task Scheduler, option 'begin the task' set to value 'at start-up'. Simple, works fine for me.
+
+
+
 
 Linux Daemons
 -------------
 
+.. note::
+    I mostly use cron to start up at boot: '@reboot'. Simple, works fine for me.
+
 Below are some examples that run bots-webserver or jobqueserver as a daemon:
 
-**Example 1**
 
-I have been starting bots-webserver on my Linux (CentOS) servers via an entry in rc.local and wanted to provide a means to gracefully shut down the process on reboot. There have been other examples of init scripts posted which do the trick, but I wanted to put something together that conformed to LSB. I took an example script I found online and configured it for the bots.webserver process. Since CentOS doesn't handle pid files correctly when using LSB functions, I tweaked it to work around the issue, and it should work on most distributions without a lot of modification
+**Example 1 systemd **
+
+(google it, quite simple)
+
+
+**Example 2 SysV init using start-stop-daemon**
+
+.. code-block:: shell
+
+    #! /bin/sh
+    #
+    # uses 'start-stop-daemon' , which is used in debian/ubuntu
+    #
+    NAME=bots-webserver
+    PIDFILE="/var/run/$NAME.pid"
+    DAEMON="/usr/local/bin/bots-webserver.py"
+    DAEMON_ARGS="-cconfig"
+
+    case "$1" in
+        start)
+            echo "Starting "$NAME" "
+            start-stop-daemon --start --verbose --background --pidfile $PIDFILE --make-pidfile --startas $DAEMON -- $DAEMON_ARGS
+            ;;
+        stop)
+            echo "Stopping "$NAME" "
+            start-stop-daemon --stop --verbose --pidfile $PIDFILE
+            rm -f $PIDFILE
+            ;;
+        restart)
+            echo "Restarting "$NAME" "
+            start-stop-daemon --stop --verbose --pidfile $PIDFILE
+            rm -f $PIDFILE
+            sleep 1
+            start-stop-daemon --start --verbose --background --pidfile $PIDFILE --make-pidfile --startas $DAEMON -- $DAEMON_ARGS
+            ;;
+        \*)
+            echo "Usage: ""$(basename "$0")"" {start|stop|restart}"
+            echo "    Starts the bots webserver as a daemon."
+            echo "    Bots-webserver is part of bots open source edi translator (http://bots.sourceforge.net)."
+            exit 1
+            ;;
+    esac
+
+    exit 0
+
+
+**Example 2 SysV init**
 
 .. code-block:: shell
 
@@ -119,55 +176,12 @@ I have been starting bots-webserver on my Linux (CentOS) servers via an entry in
       ;;
     esac
 
-**Example 2**
 
-Works on debian/ubuntu servers and uses ``start-stop-daemon``.
-
-.. code-block:: shell
-
-    #! /bin/sh
-    #
-    # uses 'start-stop-daemon' , which is used in debian/ubuntu
-    #
-    NAME=bots-webserver
-    PIDFILE="/var/run/$NAME.pid"
-    DAEMON="/usr/local/bin/bots-webserver.py"
-    DAEMON_ARGS="-cconfig"
-
-    case "$1" in
-        start)
-            echo "Starting "$NAME" "
-            start-stop-daemon --start --verbose --background --pidfile $PIDFILE --make-pidfile --startas $DAEMON -- $DAEMON_ARGS
-            ;;
-        stop)
-            echo "Stopping "$NAME" "
-            start-stop-daemon --stop --verbose --pidfile $PIDFILE
-            rm -f $PIDFILE
-            ;;
-        restart)
-            echo "Restarting "$NAME" "
-            start-stop-daemon --stop --verbose --pidfile $PIDFILE
-            rm -f $PIDFILE
-            sleep 1
-            start-stop-daemon --start --verbose --background --pidfile $PIDFILE --make-pidfile --startas $DAEMON -- $DAEMON_ARGS
-            ;;
-        \*)
-            echo "Usage: ""$(basename "$0")"" {start|stop|restart}"
-            echo "    Starts the bots webserver as a daemon."
-            echo "    Bots-webserver is part of bots open source edi translator (http://bots.sourceforge.net)."
-            exit 1
-            ;;
-    esac
-
-    exit 0
-
-**Example 3**
-
-A script for starting the job queue server as a upstart in Ubuntu. Add the following file: ``/etc/init/bots-jobqueue.conf``
+**Example 4 upstart (Ubuntu)**
 
 .. code-block:: shell
 
-    description "Bots Job queue server"
+    description "bots web server"
     author "bots@yourmail.com"
 
     start on runlevel [2345]
@@ -175,23 +189,5 @@ A script for starting the job queue server as a upstart in Ubuntu. Add the follo
 
     respawn
 
-    exec bots-jobqueueserver.py
+    exec bots-webserver.py
 
-
-Windows Services
-----------------
-
-If running Bots on a Windows server, you can create services to keep the important background processes running. This is the equivalent of a **daemon** process in Linux.
-
-
-**Prerequisites**
-Python and bots need to be installed.
-
-2 ways to do this:
-
-#. Official way, using sc.exe or srvany.exe. It's the mcrosoft way. I never use this.
-
-#. Use `NSSM <http://nssm.cc/>`_
-
-I mostly use the Task Scheduler to stasrt bots-webserver (and bots-jobqueueserver); as 'launch at start-up'.
-Simple, work fine for me.
