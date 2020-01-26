@@ -8,7 +8,7 @@ After Bots installation nothing is runnng in the background (service in windows 
 * bots-dirmonitor.py (if you use this)
 
 .. note::
-    bots-engine is :ref:`scheduled <schedule-bots-engine>`, it is not a daemon/service.
+    bots-engine is :doc:`scheduled <schedule-bots-engine>`, it is not a daemon/service.
 
 
 Windows Services
@@ -18,7 +18,7 @@ Windows Services
 
 #. Official way, using sc.exe or srvany.exe. It's the mcrosoft way. I never use this.
 
-#. Use `NSSM <http://nssm.cc/>`_
+#. Much simpler: use `NSSM <http://nssm.cc/>`_
 
 
 .. note::
