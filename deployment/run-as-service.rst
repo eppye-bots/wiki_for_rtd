@@ -8,7 +8,7 @@ After Bots installation nothing is runnng in the background (service in windows 
 * bots-dirmonitor.py (if you use this)
 
 .. note::
-    bots-engine is `scheduled <schedule-bots-engine>`, it is not a daemon/service.
+    bots-engine is :doc:`scheduled <schedule-bots-engine>`, it is not a daemon/service.
 
 
 Windows Services
@@ -36,7 +36,7 @@ Linux Daemons
 Below are some examples that run bots-webserver or jobqueserver as a daemon:
 
 
-**Example 1 systemd **
+**Example 1 systemd**
 
 (google it, quite simple)
 
