@@ -14,11 +14,11 @@ After Bots installation nothing is runnng in the background (service in windows 
 Windows Services
 ----------------
 
-2 ways to do use bots as a service (after Python and bots are installed):
+2 ways to use bots as a service (after Python and bots are installed):
 
-#. Official way, using sc.exe or srvany.exe. It's the mcrosoft way. I never use this.
+#. Official way, using sc.exe or srvany.exe. It's the Microsoft way. (I never use this myself).
 
-#. Much simpler: use `NSSM <http://nssm.cc/>`_
+#. Much simpler is to use `NSSM <http://nssm.cc/>`_
 
 
 .. note::
@@ -31,7 +31,7 @@ Linux Daemons
 -------------
 
 .. note::
-    I mostly use cron to start up at boot: '@reboot'. Simple, works fine for me.
+    I mostly use cron to start up at boot (@reboot). Simple, works fine for me.
 
 Below are some examples that run bots-webserver or jobqueserver as a daemon:
 
