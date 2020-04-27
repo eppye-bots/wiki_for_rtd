@@ -11,11 +11,9 @@ Bots works on operating systems with python installed. Confirmed is:
 * FreeBSD
 * AIX
 
-Let us know if it runs (or not) on another OS.
 
-
-Windows
--------
+Windows using bots installer
+----------------------------
 
 #. Install Python
     #. Check if Python is already installed.
@@ -32,33 +30,11 @@ Windows
 .. note::
 
     #. Mind your rights. Both Python and Bots need to be installed as admin (windows vista/7/8/10).
-    #. The windows installer includes all dependencies for standard installation. Some extra dependencies are needed for less used functions (eg. extracting data from excel or pdf files).
+    #. The windows installer includes libraries for standard installation. Additional libraries/ are needed for eg. SFTP, web API. Best option for installation of additional libraries is using ``pip``, see below.
 
 
-\*nix installation
-------------------
-
-There is no ``*.deb`` or ``*.rpm`` for bots - would be great if you have experience with this and want to give some help.
-So a standard python source code install is done.
-
-#. Install Python
-    #. Check if Python is already installed - most of the time python is already installed on ``*nix``. Use python 2.6 or 2.7. (not python >= 3.0).
-    #. If not: use package manager or see python web site.
-#. Install dependencies/libraries
-    * See `list of dependencies <#dependencies>`_.
-    * Easiest is to use your package manager for installing.
-#. Install bots
-    #. Download `bots installer <http://sourceforge.net/projects/bots/files/bots%20open%20source%20edi%20software/>`_ (e.g. bots-3.1.0.tar.gz)
-    #. Unpack (command-line): ``tar bots-3.1.0.tar.gz``
-    #. Go to created directory (command-line): ``cd bots-3.1.0``
-    #. Install (command-line): ``python setup.py install``
-    #. Postinstall: depending on what do want: change rights for directories botssys, usersys and config or place these elsewhere and make symbolic links in the bots installation directories.
-
-.. note::
-    Place the directories botssys, usersys and config somewhere else (out of /usr), change the owner/rights and make symbolic links in the bots installation to these directories.
-
-
-**Installation using pip**
+Install using pip
+-----------------
 
     .. code-block:: console
 
@@ -77,8 +53,32 @@ So a standard python source code install is done.
         $ bots-webserver.py
 
 
+\*nix installation
+------------------
 
-**Installation from scratch**
+There is no ``*.deb`` or ``*.rpm`` for bots.
+So a standard python source code install is done.
+
+#. Install Python
+    #. Check if Python is already installed - most of the time python is already installed on ``*nix``. Use python 2.6 or 2.7. (not python >= 3.0).
+    #. If not: use package manager or see python web site.
+#. Install dependencies/libraries
+    * See `list of dependencies <#dependencies>`_.
+    * Easiest is to use your package manager for installing.
+#. Install bots
+    #. Download `bots installer <http://sourceforge.net/projects/bots/files/bots%20open%20source%20edi%20software/>`_ (e.g. bots-3.1.0.tar.gz)
+    #. Unpack (command-line): ``tar bots-3.1.0.tar.gz``
+    #. Go to created directory (command-line): ``cd bots-3.1.0``
+    #. Install (command-line): ``python setup.py install``
+    #. Postinstall: depending on what do want: change rights for directories botssys, usersys and config or place these elsewhere and make symbolic links in the bots installation directories.
+
+.. note::
+    Change the owner/rights for directories botssys, usersys and config.
+    Another option is to move these directois to other place and use symbolic links in bots isntallation.
+
+
+Installation from scratch
+-------------------------
 
 Installation on amazon EC2, looks like red hat version of linux
 
@@ -129,7 +129,7 @@ Always:
 Optional:
 
     * Genshi (when using templates/mapping to HTML).
-    * SFTP needs paramiko and pycrypto. Newer versions of paramiko also need ecdsa.
+    * SFTP needs paramiko.
     * Cdecimals speeds up bots. See `website <http://www.bytereef.org/mpdecimal/index.html>`_
     * bots-dirmonitor needs:
 
