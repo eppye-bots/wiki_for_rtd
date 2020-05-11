@@ -2,23 +2,20 @@ Code Conversion
 ===============
 
 Bots supports code conversions. The code conversion is done in a mapping script; maintenance for the codes can be done via ``bots-monitor->Configuration->User codes as list``.
-This page contains 3 examples of code conversions:
+Examples of code conversions are: convert internal currency codes to external currny code, convert internal customer number to external customer number.
 
-#. Convert currency code list.
-#. Convert internal article code to buyers article code.
-#. Convert internal article code to description.
 
 **Code Maintenance in GUI**
 
-First configure 2 code lists (``bots-monitor->Configuration->user codes by type``): 
+First configure 2 code lists (``bots-monitor->Configuration->user codes by type``):
 
 .. image:: ../../images/CCbytype.png
 
-Make the code conversions (``bots-monitor->Configuration->user codes as list``): 
+Make the code conversions (``bots-monitor->Configuration->user codes as list``):
 
 .. image:: ../../images/CCaslist.png
 
-**Code Conversion in Mapping Script**
+**Example Code Conversion in Mapping Script**
 
 .. code-block:: python
 
@@ -37,6 +34,7 @@ Make the code conversions (``bots-monitor->Configuration->user codes as list``):
     #code conversion also works via reverse lookup:
     our_article_number = transform.reverse_ccode('LookupArticleNumber',buyer_article_number)
 
+
 **Code Conversion Functions**
 
 **transform.ccode(codelist, value, field, safe)**
@@ -44,21 +42,10 @@ Make the code conversions (``bots-monitor->Configuration->user codes as list``):
     Convert **value** to value in **field** using a user-maintained code list. Parameters:
 
     * *codelist*: codelist as in ``bots-monitor->Configuration->user`` codes by type.
-    * *value* to be converted (should be in **leftcode**)
-    * *field*: the field to lookup (if not specified: **rightcode**)
-    * *safe*: if False (default): raise exception when value is in found in codelist. If True: just return **value**.
+    * *value*: code to be converted (should be in **leftcode**)
+    * *field*: the field to return (if not specified: **rightcode**)
+    * *safe*: determine what happens if code not found in code conversion. Options: False (default) - raise an exception; True - return not-converted code; None - return None
 
-    Example of usage for leftcode to rightcode:
-
-    .. code-block:: python
-
-        transform.ccode('articles','8712345678906')
-
-    Example of usage for leftcode to attr1:
-
-    .. code-block:: python
-
-        transform.ccode('articles','8712345678906','attr1')
 
 **transform.reverse_ccode(codelist, value, field)**
 
