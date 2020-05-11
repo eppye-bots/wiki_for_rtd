@@ -2,7 +2,7 @@ Code Conversion
 ===============
 
 Bots supports code conversions. The code conversion is done in a mapping script; maintenance for the codes can be done via ``bots-monitor->Configuration->User codes as list``.
-Examples of code conversions are: convert internal currency codes to external currny code, convert internal customer number to external customer number.
+Examples of code conversions are: convert internal currency codes to external currency code, convert internal customer number to external customer number.
 
 
 **Code Maintenance in GUI**
@@ -51,7 +51,7 @@ Make the code conversions (``bots-monitor->Configuration->user codes as list``):
     * *codelist*: codelist as in ``bots-monitor->Configuration->user`` codes by type.
     * *value*: code to be converted (should be in **leftcode**)
     * *field*: the field to return (if not specified: **rightcode**)
-    * *safe*: determine what happens if code not found in code conversion. Options:
+    * *safe*: determines what happens if code not found in code conversion. Options:
         * False (default): raise exception
         * True: return not-converted code
         * None: return None
