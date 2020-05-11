@@ -34,6 +34,13 @@ Make the code conversions (``bots-monitor->Configuration->user codes as list``):
     #code conversion also works via reverse lookup:
     our_article_number = transform.reverse_ccode('LookupArticleNumber',buyer_article_number)
 
+    #return 'our_article_number' unconverted if not found in codelist:
+    buyer_article_number = transform.ccode('LookupArticleNumber',our_article_number,safe=True)
+
+    #if 'our_article_number' not found in codelist return value None:
+    buyer_article_number = transform.ccode('LookupArticleNumber',our_article_number,safe=None)
+
+
 
 **Code Conversion Functions**
 
@@ -44,7 +51,10 @@ Make the code conversions (``bots-monitor->Configuration->user codes as list``):
     * *codelist*: codelist as in ``bots-monitor->Configuration->user`` codes by type.
     * *value*: code to be converted (should be in **leftcode**)
     * *field*: the field to return (if not specified: **rightcode**)
-    * *safe*: determine what happens if code not found in code conversion. Options: False (default) - raise an exception; True - return not-converted code; None - return None
+    * *safe*: determine what happens if code not found in code conversion. Options:
+        * False (default): raise exception
+        * True: return not-converted code
+        * None: return None
 
 
 **transform.reverse_ccode(codelist, value, field)**
