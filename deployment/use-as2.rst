@@ -22,7 +22,7 @@ Several threads in the mailing list about this:
 
 * http://sourceforge.net/projects/mec-as2/
 * http://sourceforge.net/projects/openas2/
-* https://github.com/abhishek-ram/pyas2
+* https://github.com/abhishek-ram/django-pyas2
 * http://www.cecid.hku.hk/hermes.php
 * http://stackoverflow.com/questions/7426951/is-anyone-using-python-for-gs1-xml-and-as2-edi
 
