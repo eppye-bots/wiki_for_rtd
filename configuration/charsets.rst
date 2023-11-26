@@ -53,7 +53,7 @@ Edifact has its own character-sets: UNOA, UNOB, UNOC, etc. In default bots setup
 * UNOA and UNOB have own character-set mapping ``in usersys/charsets``.
 * Other edifact character-sets are aliased in ``config/bots.ini``, section charsets.
 * Default UNOA and UNOB are not 100% strict but allow some extra characters like ``<CR/LF>``.
-* There are some variations of default UNOA/UNOB in `sourceforge downloads <http://http//sourceforge.net/projects/bots/files/edifact%20character%20sets/>`_.
+* There are some variations of default UNOA/UNOB in `sourceforge downloads <http://sourceforge.net/projects/bots/files/edifact%20character%20sets>`_.
 
 Some typical issues and solutions:
 
