@@ -19,7 +19,7 @@ Example of syntax parameters:
 Usage and Overriding
 --------------------
 
-Syntax parameters can be set at different places; these settings override (somewhat luke CSS).
+Syntax parameters can be set at different places; these settings override (somewhat like CSS).
 The order in which overriding is done:
 
 * default values are in ``bots/grammars.py`` (per editype). **Do not change these values here**
