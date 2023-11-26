@@ -10,7 +10,7 @@ Example of syntax parameters:
 .. code-block:: python
 
     syntax = { 
-            'charset'                  : 'uft-8', #character set is utf-8
+            'charset'                  : 'utf-8', #character set is utf-8
             'checkfixedrecordtooshort' : True,    #check if fixed record is to short
             'indented'                 : True,    #xml: produced indented output
             'decimaal'                 : ',',     #decimal sign is ', '
