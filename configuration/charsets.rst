@@ -18,7 +18,7 @@ using the character-set as specified in the ``outgoing`` syntax. You do not need
 
 * Most used in edi is ascii, iso-8859-1, uft-8 (xml).
 * Most familiar is ascii. Note that ascii has only 128 characters. One character is one byte.
-* The extended asccii character-sets.
+* The extended ascii character-sets.
     * One character is always one byte.
     * The upper 128 (above ascii) are used as special characters (eg éëè).
     * These different character-sets are about displaying (on screen, print etc). If the texts is in iso-8859-1, but displayed as eg IBM850 looks *wrong*. Note that the content is still the same, it's only the display that is different.
