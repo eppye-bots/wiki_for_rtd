@@ -22,7 +22,7 @@ So Bots splits up edi-files:
 * Receiving zipped edi files: the files in the zip-file as saved as separate edi-files.
 * For edifact, x12, tradacoms: interchanges are being split up to separate files.
 * Incoming edi-files are being fed to the mapping-script as messages. This is done by :doc:`nextmessage <grammars/nextmessage>` in the grammar syntax.
-* Spit within a mapping script. Think of eg splitting up a shipment to the different orders. There are 2 ways of doing this:
+* Split within a mapping script. Think of eg splitting up a shipment to the different orders. There are 2 ways of doing this:
     #. Write multiple message to the same file .
     #. Write each generated message to the same file, using alt translations.
 
