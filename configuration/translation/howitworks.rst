@@ -14,7 +14,7 @@ Step-by-step:
     * Sorting: eg. sort article lines by article number.
     * Counting: eg. count number of lines, total amounts etc
     * Access the data you already written in the tree
-#. `Split <../split-merge.html#splitting-edi-files>`_ the edi file into separate messages (eg one edi file can contain multiple orders).
+#. `Split <../split-merge/#splitting-edi-files>`_ the edi file into separate messages (eg one edi file can contain multiple orders).
 #. Find the :doc:`right translation <whatwhen>` for message.
 #. Run the :doc:`mapping script <../mapping-scripts/index>` for message.
 #. Serialize the outmessage-tree to file. This is checked and formatted according to the :doc:`grammar <../grammars/index>` of the outgoing message.

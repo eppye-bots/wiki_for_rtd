@@ -1,7 +1,7 @@
 Tools, tutorials, links, python
 ===============================
 
-Lots of information, not directly related to bots it-selves. Nevertheless this information can be very useful. 
+Lots of information, not directly related to bots itself. Nevertheless this information can be very useful. 
 
 
 .. toctree::

@@ -2,7 +2,7 @@ Use Apache2 as Webserver
 ========================
 
 * Bots uses cherrypy webserver Out of the Box and in order to scale it, you need to run it on an Apache2 Web Server
-* One Advantage is that with this is that apache2 will take care of staring the Bots Monitor so there is no need to create a daemon for the bots webserver.
+* One advantage with this is that apache2 will take care of starting the Bots Monitor so there is no need to create a daemon for the bots webserver.
 
 **Procedure**
 
