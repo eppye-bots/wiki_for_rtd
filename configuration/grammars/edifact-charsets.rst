@@ -16,4 +16,4 @@ There are some problems with character-sets UNOA and UNOB:
 
 A default bots installation includes by default the UNOA and UNOB character set. These are not strict interpreted, but **tuned to reality**, so that they will not often lead to problems.
 
-In the download **charsetvariations** on `sourceforge site <http://sourceforge.net/projects/bots/files/grammars/edifact%20grammars/>`_ are some variations on these character-sets (stricter, less strict). Read the comments in these files first.
+In the download **charsetvariations** on `sourceforge site <http://sourceforge.net/projects/bots/files/edifact%20character%20sets/>`_ are some variations on these character-sets (stricter, less strict). Read the comments in these files first.

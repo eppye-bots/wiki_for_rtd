@@ -18,7 +18,7 @@ using the character-set as specified in the ``outgoing`` syntax. You do not need
 
 * Most used in edi is ascii, iso-8859-1, uft-8 (xml).
 * Most familiar is ascii. Note that ascii has only 128 characters. One character is one byte.
-* The extended asccii character-sets.
+* The extended ascii character-sets.
     * One character is always one byte.
     * The upper 128 (above ascii) are used as special characters (eg éëè).
     * These different character-sets are about displaying (on screen, print etc). If the texts is in iso-8859-1, but displayed as eg IBM850 looks *wrong*. Note that the content is still the same, it's only the display that is different.
@@ -53,7 +53,7 @@ Edifact has its own character-sets: UNOA, UNOB, UNOC, etc. In default bots setup
 * UNOA and UNOB have own character-set mapping ``in usersys/charsets``.
 * Other edifact character-sets are aliased in ``config/bots.ini``, section charsets.
 * Default UNOA and UNOB are not 100% strict but allow some extra characters like ``<CR/LF>``.
-* There are some variations of default UNOA/UNOB in `sourceforge downloads <http://http//sourceforge.net/projects/bots/files/edifact%20character%20sets/>`_.
+* There are some variations of default UNOA/UNOB in `sourceforge downloads <http://sourceforge.net/projects/bots/files/edifact%20character%20sets>`_.
 
 Some typical issues and solutions:
 

@@ -8,7 +8,7 @@ EDI
 * `EANCOM <http://www.gs1.se/EANCOM_2002/ean02s4/experts/index.htm>`_, In trade EANCOM is the most used edifact standard. Guides are much better than the edifact general documentation.
 * `UN/EDIFACT reference <http://www.unece.org/trade/untdid/Welcome.html>`_, The official source of edifact (the one and only). All other information is derived from this.
 * `Stylus Studio EDIFACT reference <http://www.stylusstudio.com/edifact/frames.htm>`_, I have found this page very useful as my main EDIFACT reference. All the versions are there back to D93A and everything is hyperlinked.
-* `Liason EDI Notepad <http://www.liaison.com/products/integrate/edi-notepad/>`_, EDI editor/validator free for Windows platform. It provides rendering of EDI/EDIFACT/TRADACOMS/X12.
+* `Liaison EDI Notepad <https://softwareconnect.com/edi/liaison-edi-notepad/>`_, EDI editor/validator free for Windows platform. It provides rendering of EDI/EDIFACT/TRADACOMS/X12.
 
 .. note::
     Please note that the official X12 documentation is not free and should be purchased.

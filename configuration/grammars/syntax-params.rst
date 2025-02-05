@@ -10,7 +10,7 @@ Example of syntax parameters:
 .. code-block:: python
 
     syntax = { 
-            'charset'                  : 'uft-8', #character set is utf-8
+            'charset'                  : 'utf-8', #character set is utf-8
             'checkfixedrecordtooshort' : True,    #check if fixed record is to short
             'indented'                 : True,    #xml: produced indented output
             'decimaal'                 : ',',     #decimal sign is ', '
@@ -19,7 +19,7 @@ Example of syntax parameters:
 Usage and Overriding
 --------------------
 
-Syntax parameters can be set at different places; these settings override (somewhat luke CSS).
+Syntax parameters can be set at different places; these settings override (somewhat like CSS).
 The order in which overriding is done:
 
 * default values are in ``bots/grammars.py`` (per editype). **Do not change these values here**
