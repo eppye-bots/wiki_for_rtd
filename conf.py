@@ -290,5 +290,5 @@ html_context = {
   'display_github': True,
   'github_user': 'WKaz',
   'github_repo': 'wiki_for_rtd',
-  'github_version': 'master',
+  'github_version': 'master/',
 }
