@@ -283,3 +283,12 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+# -- Options added to keep the same look as on old version of bots-documentation ------
+
+html_context = {
+  'display_github': True,
+  'github_user': 'WKaz',
+  'github_repo': 'wiki_for_rtd',
+  'github_version': 'master',
+}
