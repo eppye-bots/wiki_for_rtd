@@ -51,9 +51,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Bots Open Source Edi Translator'
-copyright = u'2017, hjebbers'
-author = u'hjebbers'
+project = u'Bots Open Source EDI Translator'
+copyright = u'2017, Henk-Jan Ebbers'
+author = u'Henk-Jan Ebbers'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
