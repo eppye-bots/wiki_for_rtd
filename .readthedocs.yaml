@@ -9,6 +9,7 @@ version: 2
 formats:
   - htmlzip
   - pdf
+  - epub
 
 # Set the version of Python and other tools you might need
 build:
