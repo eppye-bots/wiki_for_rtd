@@ -8,7 +8,7 @@ After Bots installation nothing is runnng in the background (service in windows 
 * bots-dirmonitor.py (if you use this)
 
 .. note::
-    bots-engine is :doc:`scheduled <schedule-bots-engine>`, it is not a daemon/service.
+    bots-engine is :doc:`scheduled <run-bots-engine>`, it is not a daemon/service.
 
 
 Windows Services

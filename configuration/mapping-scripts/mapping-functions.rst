@@ -19,7 +19,7 @@ Depreciated: use python's 'or' (easier, better). 'Or' is used in examples below.
     value = inn.get({'BOTSID':'IMD','C960.4294':None}) or 'my value'
 
 transform.concat(\*args,sep)
-------------------------
+----------------------------
 
 Concatenate a list of strings. If argument is None, nothing is concatenated.
 
@@ -31,7 +31,7 @@ Concatenate a list of strings. If argument is None, nothing is concatenated.
     #returns 'my string'
 
 transform.truncate(max_length,value)
-------------------------
+------------------------------------
 
 Truncate value:
 
