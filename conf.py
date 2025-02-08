@@ -227,12 +227,12 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'bots.tex', u'documentation for bots', u'hjebbers', 'manual'),
+  (master_doc, 'bots.tex', u'Documentation for bots', u'Henk-Jan Ebbers', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = 'images/botslogo_square2.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
