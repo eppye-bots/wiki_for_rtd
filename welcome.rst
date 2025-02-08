@@ -2,14 +2,14 @@ Welcome to bots
 ===============
 
 .. note::
-   The current version of this document is available at bots.readthedocs.io `<https://bots.readthedocs.io>`_.
+   The most recent PDF version of this document is available at `bots.readthedocs.io <https://bots.readthedocs.io/_/downloads/en/latest/pdf/>`_.
 
 * **Bots** is fully functional software for `EDI (Electronic Data Interchange) <https://en.wikipedia.org/wiki/Electronic_data_interchange>`_. 
 * All major EDI data formats are supported: EDIFACT, X12, TRADACOMS, XML. 
 * Runs on Windows, Linux, OSX and Unix. 
 * **Bots** is very stable. 
 * **Bots** handles high volumes of edi transactions.
-* **Bots** is flexible and can be configurated for your specific EDI needs. 
+* **Bots** is flexible and can be configured for your specific EDI needs. 
 * Read about the `features of bots <https://bots-edi.org/post/frozen-features-full-list/>`_.
 
 
