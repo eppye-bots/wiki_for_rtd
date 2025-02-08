@@ -290,7 +290,7 @@ texinfo_documents = [
 # Edit on GitHub link
 html_context = {
   'display_github': True,
-  'github_user': 'WKaz',
+  'github_user': 'eppye-bots',
   'github_repo': 'wiki_for_rtd',
   'github_version': 'master/',
 }
