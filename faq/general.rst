@@ -17,7 +17,7 @@ General FAQ
     This is usually a permission problem. 
     Remember that if you are running Bots Engine as a daemon/service it may be running under a system user account. 
     Make sure the user has rights to the folder/files, or run the engine with a special user account that does have the required rights. 
-    It is best to use the :ref:`jobqueue server <job-queue-server>` so that engine runs started from the GUI also run under the special user account.
+    It is best to use the :ref:`jobqueue server <jobqueueserver>` so that engine runs started from the GUI also run under the special user account.
 
 **Error in Internet Explorer: 'ValueError: invalid literal for int() with base 10'**
     This has to do with the compatibility-settings of IE (tools->compatibility view settings). 

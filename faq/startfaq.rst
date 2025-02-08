@@ -16,4 +16,4 @@ Start FAQ
 
 **Can I run multiple instances of bots-engine in parallel?**
     | No, this is not possible.
-    | Instead bots >= 3.0 has better control of running the engine: :ref:`jobqueue server <job-queue-server>`.
+    | Instead bots >= 3.0 has better control of running the engine: :ref:`jobqueue server <jobqueueserver>`.

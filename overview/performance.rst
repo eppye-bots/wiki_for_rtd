@@ -19,7 +19,7 @@ Performance
 **Strategy for bigger edi volumes**
 
 * Best strategy is to :ref:`schedule <schedule-bots-engine>` bots-engine more often.
-* (bots >= 3.0) Schedule bots-engine via the :ref:`jobqueue server <job-queue-server>`.
+* (bots >= 3.0) Schedule bots-engine via the :ref:`jobqueue server <jobqueueserver>`.
 * Routes can be :ref:`scheduled independently<schedule-bots-engine>`.
 * Set-up good scheduling, keeping volumes in mind.
 * EDI in the real world has often large peaks.
