@@ -228,7 +228,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 
 latex_documents = [
-  (master_doc, 'bots.tex', u'Documentation for bots', u'Henk-Jan Ebbers', 'manual'),
+  (master_doc, 'bots.tex', u'Bots documentation', u'Henk-Jan Ebbers', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -257,7 +257,7 @@ latex_logo = 'images/botslogo_square2.png'
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'bots', u'documentation for bots',[author], 1)
+    (master_doc, 'bots', u'Bots documentation',[author], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -270,7 +270,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'bots', u'Documentation for bots', author, 'bots', 'bots open source edi translator','edi'),
+  (master_doc, 'bots', u'Bots Documentation', author, 'bots', 'bots open source edi translator','edi'),
 ]
 
 # Documents to append as an appendix to all manuals.
