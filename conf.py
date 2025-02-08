@@ -132,7 +132,7 @@ html_theme = 'sphinx_rtd_theme'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = 'images/botssingle_notxt.png'
+html_logo = 'images/botslogo_square2.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -210,22 +210,23 @@ htmlhelp_basename = 'wiki for bots'
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+    # The paper size ('letterpaper' or 'a4paper').
+    'papersize': 'a4paper',
 
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+    # The font size ('10pt', '11pt' or '12pt').
+    'pointsize': '10pt',
 
-# Additional stuff for the LaTeX preamble.
-#'preamble': '',
+    # Additional stuff for the LaTeX preamble.
+    # 'preamble': '',
 
-# Latex figure (float) alignment
-#'figure_align': 'htbp',
+    # Latex figure (float) alignment
+    #'figure_align': 'htbp',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
+
 latex_documents = [
   (master_doc, 'bots.tex', u'Documentation for bots', u'Henk-Jan Ebbers', 'manual'),
 ]
@@ -269,7 +270,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'bots', u'documentation for bots', author, 'bots', 'bots open source edi translator','edi'),
+  (master_doc, 'bots', u'Documentation for bots', author, 'bots', 'bots open source edi translator','edi'),
 ]
 
 # Documents to append as an appendix to all manuals.
@@ -286,6 +287,7 @@ texinfo_documents = [
 
 # -- Options added to keep the same look as on old version of bots-documentation ------
 
+# Edit on GitHub link
 html_context = {
   'display_github': True,
   'github_user': 'WKaz',
