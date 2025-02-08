@@ -1,4 +1,4 @@
-Debugging in bots
+Debugging in Bots
 =================
 
 

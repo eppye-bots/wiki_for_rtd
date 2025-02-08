@@ -1,4 +1,4 @@
-Welcome to bots
+Welcome to Bots
 ===============
 
 .. note::

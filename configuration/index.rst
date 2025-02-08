@@ -1,4 +1,4 @@
-Configure bots
+Configure Bots
 ==============
 
 * Out of the box bots does nothing. You have to configure bots for your specific edi requirements. 
