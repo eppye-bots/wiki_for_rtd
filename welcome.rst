@@ -1,31 +1,34 @@
 Welcome to bots
 ===============
 
+.. note::
+   The current version of this document is available at bots.readthedocs.io `<https://bots.readthedocs.io>`_.
+
 * **Bots** is fully functional software for `EDI (Electronic Data Interchange) <https://en.wikipedia.org/wiki/Electronic_data_interchange>`_. 
 * All major EDI data formats are supported: EDIFACT, X12, TRADACOMS, XML. 
 * Runs on Windows, Linux, OSX and Unix. 
 * **Bots** is very stable. 
 * **Bots** handles high volumes of edi transactions.
 * **Bots** is flexible and can be configurated for your specific EDI needs. 
-* Read about the `features of bots <http://bots.sourceforge.net/en/about_features.shtml>`_ and `the latest news <http://bots.sourceforge.net/en/news.shtml>`_
+* Read about the `features of bots <https://bots-edi.org/post/frozen-features-full-list/>`_.
 
 
 First steps
 -----------
 
-#. :doc:`Installation <installation>`
-#. :doc:`Start bots up <get-bots-running>`
-#. Get your first configuration running: :doc:`Quick Start Guide <quick-start-guide/index>`
+#. :doc:`Installation <installation>`.
+#. :doc:`Get bots running <get-bots-running>`.
+#. Get your first configuration running: :doc:`Quick Start Guide <quick-start-guide/index>`.
 #. Check out some :doc:`plugins <plugins/index>`.
 
 
 Other info on bots
 ------------------
 
-* `Sourceforge website <http://bots.sourceforge.net/>`_.
+* `Project website <https://bots-edi.org>`_.
 * `Active mailing list <http://groups.google.com/group/botsmail>`_.
 * Bots is licenced under `GNU GENERAL PUBLIC LICENSE Version 3 <http://www.gnu.org/copyleft/gpl.html>`_.
-* Commercial support by `EbbersConsult <http://www.ebbersconsult.com>`_.
+* Commercial support by `EbbersConsult <https://www.linkedin.com/in/henk-jan-ebbers-6649b61/>`_.
 
 
 It's hard to get started
