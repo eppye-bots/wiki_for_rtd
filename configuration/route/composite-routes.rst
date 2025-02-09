@@ -33,7 +33,8 @@ This plugin has one composite route consisting of:
 
 Detailled description here.
 
-**Filtering for different outchannels**
+Filtering for different outchannels
+-----------------------------------
 
 * You can filter per outchannel; eg send only asn's through this outchannel.
 * In route-screen (``bots-monitor->Configuration->Routes``) the fields used for filtering under **Filtering for outchannel**.

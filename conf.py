@@ -51,9 +51,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Bots Open Source Edi Translator'
-copyright = u'2017, hjebbers'
-author = u'hjebbers'
+project = u'Bots Open Source EDI Translator'
+copyright = u'2017, Henk-Jan Ebbers'
+author = u'Henk-Jan Ebbers'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -121,7 +121,7 @@ html_theme = 'sphinx_rtd_theme'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+#html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -142,7 +142,7 @@ html_favicon = 'images/favicon.ico'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+#html_static_path = ['_static']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
@@ -210,29 +210,30 @@ htmlhelp_basename = 'wiki for bots'
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+    # The paper size ('letterpaper' or 'a4paper').
+    'papersize': 'a4paper',
 
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+    # The font size ('10pt', '11pt' or '12pt').
+    'pointsize': '10pt',
 
-# Additional stuff for the LaTeX preamble.
-#'preamble': '',
+    # Additional stuff for the LaTeX preamble.
+    # 'preamble': '',
 
-# Latex figure (float) alignment
-#'figure_align': 'htbp',
+    # Latex figure (float) alignment
+    #'figure_align': 'htbp',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
+
 latex_documents = [
-  (master_doc, 'bots.tex', u'documentation for bots', u'hjebbers', 'manual'),
+  (master_doc, 'bots.tex', u'Bots documentation', u'Henk-Jan Ebbers', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = 'images/botslogo_square2.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
@@ -256,7 +257,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'bots', u'documentation for bots',[author], 1)
+    (master_doc, 'bots', u'Bots documentation',[author], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -269,7 +270,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'bots', u'documentation for bots', author, 'bots', 'bots open source edi translator','edi'),
+  (master_doc, 'bots', u'Bots Documentation', author, 'bots', 'bots open source edi translator','edi'),
 ]
 
 # Documents to append as an appendix to all manuals.
@@ -283,3 +284,13 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+# -- Options added to keep the same look as on old version of bots-documentation ------
+
+# Edit on GitHub link
+html_context = {
+  'display_github': True,
+  'github_user': 'eppye-bots',
+  'github_repo': 'wiki_for_rtd',
+  'github_version': 'master/',
+}

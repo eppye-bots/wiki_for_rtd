@@ -10,7 +10,7 @@ Options for running bots-engine:
     * This can be combined; eg
         * schedule ``new`` every 15minutes
         * manually ``rereceive`` and ``resend``
-#. Direct or via `jobqueue-server <#job-queue-server>`_.
+#. Direct or via `jobqueue-server <#jobqueueserver>`_.
 #. Specify the routes to run:
     * Run all routes. Default way of running (nothing specified).
     * Run all routes with excludes. Indicate in route if routes ought not to run in a default run.
@@ -30,7 +30,7 @@ Scheduling Bots-Engine
 * Bots does not have a built-in scheduler. Scheduling is done by the scheduler of your OS.
     * Windows: use eg `Windows Task Scheduler <http://support.microsoft.com/kb/308569>`_.
     * Linux/unix: use eg cron. 
-* Bots-engine does not run concurrently (in parallel). If a previous run is still in progress, a new run will not start. From version 3.0 onwards, Bots includes an optional `job queue server <#job-queue-server>`_ to use when scheduling Bots engine. Using this is recommended, to prevent discarding runs that overlap.
+* Bots-engine does not run concurrently (in parallel). If a previous run is still in progress, a new run will not start. From version 3.0 onwards, Bots includes an optional `job queue server <#jobqueueserver>`_ to use when scheduling Bots engine. Using this is recommended, to prevent discarding runs that overlap.
 * **Strong advice**: when scheduling bots-engine, activate the sending of :doc:`automatic email-reports <email-notifications>` for errors.
 
 .. rubric::
@@ -64,7 +64,7 @@ Scheduling Bots-Engine
 .. rubric::
     My Setup (Mike)
 
-I am using Windows task scheduler and Bots `job queue <#job-queue-server>`_ is enabled. I have five scheduled tasks:
+I am using Windows task scheduler and Bots `job queue <#jobqueueserver>`_ is enabled. I have five scheduled tasks:
 
 #. Bots-engine (every 5 minutes, 24x7)
 #. Bots-engine-hourly (every hour on the hour)
@@ -105,7 +105,7 @@ Each task has a corresponding batch file in the scripts directory. This makes ta
     C:\python27\python.exe C:\python27\scripts\bots-job2queue.py -p9 C:\python27\python.exe C:\python27\scripts\bots-engine.py daily_reports SAP_Expired_Contracts
 
 
-.. _Job-Queue-Server:
+.. _jobqueueserver:
 
 Job Queue Server
 ----------------
@@ -189,7 +189,7 @@ Use of the directory monitor is optional. It may be useful for processing files 
 
 **Prerequisites**
 
-* Directory monitor uses the `job queue <#job-queue-server>`_.
+* Directory monitor uses the `job queue <#jobqueueserver>`_.
 * Monitoring must be configured in :doc:`bots.ini <../overview/configuration-files>` (``dirmonitorX`` sections)
 * Directory monitor :doc:`daemon process <run-as-service>` must be started (``bots-dirmonitor.py``)
 

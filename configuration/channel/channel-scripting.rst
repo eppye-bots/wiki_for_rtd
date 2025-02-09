@@ -329,7 +329,7 @@ TODO: make a valid example using yield. main is a generator.
 
     def main(channeldict,*args,**kwargs):
 
-        yield ?
+        # yield ?
 
 **Example 3: outgoing files via external program all at once**
 

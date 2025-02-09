@@ -21,4 +21,4 @@ Different errors:
             #. Note: number of resends is indicated in the outgoing view.
             #. The first time you use ``automaticretrycommunication`` nothing is resend, but automaticretry is initialised: all failed communications from that moment on will be resend. This is to prevent having all older failed communications resend.
             #. Scheduling: often bots is scheduled to run eg every 10 minutes, and automaticretry once an hour. 
-               For this type of scheduling use the :ref:`jobqueue server <job-queue-server>`.
+               For this type of scheduling use the :ref:`jobqueue server <jobqueueserver>`.
