@@ -2,7 +2,8 @@ Welcome to Bots
 ===============
 
 .. note::
-   The most recent PDF version of this document is available at `bots.readthedocs.io <https://bots.readthedocs.io/_/downloads/en/latest/pdf/>`_.
+   * This is the documentation of Bots-EDI v3.2.0 (Frozen).
+   * The most recent PDF version of this document is available at `bots.readthedocs.io <https://bots.readthedocs.io/_/downloads/en/latest/pdf/>`_.
 
 * **Bots** is fully functional software for `EDI (Electronic Data Interchange) <https://en.wikipedia.org/wiki/Electronic_data_interchange>`_. 
 * All major EDI data formats are supported: EDIFACT, X12, TRADACOMS, XML. 
