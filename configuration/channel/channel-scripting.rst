@@ -19,7 +19,7 @@ Instruction to make a channel script:
 
 #. Small user exits: at certain places in normal communication a user script is called. Examples of `small user exits <#small-user-exits>`_
 #. Subclass: take-over of (parts of) communication script: user script subclasses existing communication type.
-#. Communication type ``communicationscript``. Bots tries to do the bots-handling of files, you provide the communication details. Examples of `communication type 'communicationscript' <communication-type-communicationscript>`_
+#. Communication type ``communicationscript``. Bots tries to do the bots-handling of files, you provide the communication details. Examples of `communication type 'communicationscript' <#communication-type-script>`_
 
 Small User Exits
 ----------------
@@ -284,6 +284,8 @@ In this case communication-type of the channel is 'ftp'. The class 'ftp' subclas
             except:
                 self.session.close()
             botslib.settimeout(botsglobal.ini.getint('settings','globaltimeout',10))
+
+.. _communication-type-script:
 
 Communication type ``communicationscript``
 ------------------------------------------
