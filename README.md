@@ -1,6 +1,6 @@
 ![bots_logo](images/botslogo_chain.png)
 
-# Bots-EDI Documentation
+# Bots v3.2.0 (Frozen) Documentation
 
 This is the source of documentation published on: [http://bots.readthedocs.io](http://bots.readthedocs.io).
 
